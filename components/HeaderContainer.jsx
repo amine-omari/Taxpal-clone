@@ -19,7 +19,7 @@ const HeaderContainer = () => {
         </div>
         <div className="flex items-center space-x-6">
           <Link
-            className="rounded-full bg-blue-600 px-4 py-2.5 text-sm font-semibold tracking-wide text-white"
+            className="rounded-full bg-blue-600 px-4 py-2.5 text-sm font-semibold tracking-wide text-white hover:bg-blue-500"
             href="/"
           >
             Get started
