@@ -1,11 +1,15 @@
 import LogoIcon from "@/icons/LogoIcon";
 import MenuIcon from "@/icons/MenuIcon";
+import Xmark from "@/icons/Xmark";
 import Link from "next/link";
 import React, { useState } from "react";
 
 const HeaderContainer = () => {
   const [linkItems, setLinkItems] = useState();
 
+  const toggleMenu = () => {
+    setLinkItems(!linkItems);
+  };
   return (
     <header className="py-10">
       <nav className="flex items-center justify-between px-4">
@@ -19,8 +23,8 @@ const HeaderContainer = () => {
           >
             Get started
           </Link>
-          <button>
-            <MenuIcon />
+          <button onClick={toggleMenu}>
+            {linkItems ? <Xmark /> : <MenuIcon />}
           </button>
         </div>
       </nav>
