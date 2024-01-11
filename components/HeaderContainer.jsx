@@ -1,9 +1,11 @@
 import LogoIcon from "@/icons/LogoIcon";
 import MenuIcon from "@/icons/MenuIcon";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const HeaderContainer = () => {
+  const [linkItems, setLinkItems] = useState();
+
   return (
     <header className="py-10">
       <nav className="flex items-center justify-between px-4">
