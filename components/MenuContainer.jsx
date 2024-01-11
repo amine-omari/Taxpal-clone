@@ -3,7 +3,11 @@ import React from "react";
 
 const MenuContainer = () => {
   return (
-    <div>MenuContainer</div>
+    <div className="">
+      <Link href="/">Features</Link>
+      <Link href="/">About</Link>
+      <Link href="/">Princing</Link>
+    </div>
   );
 };
 
