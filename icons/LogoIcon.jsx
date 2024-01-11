@@ -2,7 +2,7 @@ import React from "react";
 
 const LogoIcon = () => {
   return (
-    <svg aria-hidden="true" viewBox="0 0 109 40" class="h-10 w-auto">
+    <svg aria-hidden="true" viewBox="0 0 109 40" width={109} height={40}>
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"
