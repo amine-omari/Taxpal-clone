@@ -5,10 +5,12 @@ import Link from "next/link";
 import React, { useState } from "react";
 import MenuContainer from "./MenuContainer";
 
-const HeaderContainer = ({ menuOpen, setMenuOpen }) => {
+const HeaderContainer = () => {
+  const [menuOpen, setMenuOpen] = useState();
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
   return (
     <header className="py-10">
       <nav className="flex items-center justify-between px-4">
@@ -22,10 +24,21 @@ const HeaderContainer = ({ menuOpen, setMenuOpen }) => {
           >
             Get started
           </Link>
-          <button onClick={toggleMenu}>
-            {menuOpen ? <Xmark /> : <MenuIcon />}
+          <div>
+            <button
+              className="relative z-50 flex items-center"
+              onClick={toggleMenu}
+            >
+              {menuOpen ? <Xmark /> : <MenuIcon />}
+            </button>
             {menuOpen && <MenuContainer />}
-          </button>
+            {menuOpen && (
+              <div
+                className="absolute right-0 top-0 h-full w-full bg-slate-300/50"
+                onClick={toggleMenu}
+              ></div>
+            )}
+          </div>
         </div>
       </nav>
     </header>
