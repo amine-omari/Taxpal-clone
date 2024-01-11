@@ -1,6 +1,21 @@
+import Link from "next/link";
 import React from "react";
 
 const FirstSection = () => {
+  const buttonStyle = [
+    {
+      id: 1,
+      text: "Get 6 months free",
+      icon: false,
+      style: "",
+    },
+    {
+      id: 2,
+      text: "Watch video",
+      icon: true,
+      style: "",
+    },
+  ];
   return (
     <section className="px-4 pb-16 pt-20">
       <div className="text-center">
@@ -14,6 +29,14 @@ const FirstSection = () => {
           Most bookkeeping software is accurate, but hard to use. We make the
           opposite trade-off, and hope you don’t get audited.
         </p>
+        <div>
+          {buttonStyle.map(({ id, text, icon, style }) => (
+            <Link key={id} className={`${style}`} href="/">
+              {icon}
+              {text}
+            </Link>
+          ))}
+        </div>
       </div>
     </section>
   );
