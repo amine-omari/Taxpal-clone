@@ -34,7 +34,7 @@ const HeaderContainer = () => {
             {menuOpen && <MenuContainer />}
             {menuOpen && (
               <div
-                className="absolute right-0 top-0 h-full w-full bg-slate-300/50"
+                className="fixed right-0 top-0 h-full w-full bg-slate-300/50"
                 onClick={toggleMenu}
               ></div>
             )}
