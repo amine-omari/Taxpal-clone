@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import FirstSection from "./FirstSection";
 
 const MainContainer = () => {
   return (
-    <div>MainContainer</div>
-  )
-}
+    <main>
+      <FirstSection />
+    </main>
+  );
+};
 
-export default MainContainer
+export default MainContainer;
