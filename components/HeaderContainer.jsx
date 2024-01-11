@@ -24,8 +24,8 @@ const HeaderContainer = ({ menuOpen, setMenuOpen }) => {
           </Link>
           <button onClick={toggleMenu}>
             {menuOpen ? <Xmark /> : <MenuIcon />}
+            {menuOpen && <MenuContainer />}
           </button>
-          {menuOpen && <MenuContainer />}
         </div>
       </nav>
     </header>
