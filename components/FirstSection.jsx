@@ -1,3 +1,4 @@
+import Play from "@/icons/Play";
 import Link from "next/link";
 import React from "react";
 
@@ -32,7 +33,7 @@ const FirstSection = () => {
         <div>
           {buttonStyle.map(({ id, text, icon, style }) => (
             <Link key={id} className={`${style}`} href="/">
-              {icon}
+              {icon && <Play />}
               {text}
             </Link>
           ))}
