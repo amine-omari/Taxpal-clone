@@ -3,6 +3,7 @@ import MenuIcon from "@/icons/MenuIcon";
 import Xmark from "@/icons/Xmark";
 import Link from "next/link";
 import React, { useState } from "react";
+import MenuContainer from "./MenuContainer";
 
 const HeaderContainer = () => {
   const [linkItems, setLinkItems] = useState();
@@ -26,6 +27,7 @@ const HeaderContainer = () => {
           <button onClick={toggleMenu}>
             {linkItems ? <Xmark /> : <MenuIcon />}
           </button>
+          {linkItems && <MenuContainer />}
         </div>
       </nav>
     </header>
