@@ -8,13 +8,13 @@ const FirstSection = () => {
       id: 1,
       text: "Get 6 months free",
       icon: false,
-      style: "",
+      style: "bg-black text-white font-semibold hover:bg-slate-700",
     },
     {
       id: 2,
       text: "Watch video",
       icon: true,
-      style: "",
+      style: "border space-x-3 hover:border-slate-300",
     },
   ];
   return (
@@ -30,11 +30,15 @@ const FirstSection = () => {
           Most bookkeeping software is accurate, but hard to use. We make the
           opposite trade-off, and hope you don’t get audited.
         </p>
-        <div>
+        <div className="mt-10 flex justify-center space-x-5">
           {buttonStyle.map(({ id, text, icon, style }) => (
-            <Link key={id} className={`${style}`} href="/">
-              {icon && <Play />}
-              {text}
+            <Link
+              key={id}
+              className={`${style} flex items-center rounded-full px-4 py-2 text-sm tracking-wide`}
+              href="/"
+            >
+              <span>{icon && <Play />}</span>
+              <p>{text}</p>
             </Link>
           ))}
         </div>
