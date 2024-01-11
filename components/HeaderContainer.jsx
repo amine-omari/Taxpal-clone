@@ -5,11 +5,9 @@ import Link from "next/link";
 import React, { useState } from "react";
 import MenuContainer from "./MenuContainer";
 
-const HeaderContainer = () => {
-  const [linkItems, setLinkItems] = useState();
-
+const HeaderContainer = ({ menuOpen, setMenuOpen }) => {
   const toggleMenu = () => {
-    setLinkItems(!linkItems);
+    setMenuOpen(!menuOpen);
   };
   return (
     <header className="py-10">
@@ -25,9 +23,9 @@ const HeaderContainer = () => {
             Get started
           </Link>
           <button onClick={toggleMenu}>
-            {linkItems ? <Xmark /> : <MenuIcon />}
+            {menuOpen ? <Xmark /> : <MenuIcon />}
           </button>
-          {linkItems && <MenuContainer />}
+          {menuOpen && <MenuContainer />}
         </div>
       </nav>
     </header>
