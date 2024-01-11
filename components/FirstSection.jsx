@@ -1,6 +1,7 @@
 import Play from "@/icons/Play";
 import Link from "next/link";
 import React from "react";
+import TrustedCompanies from "./TrustedCompanies";
 
 const FirstSection = () => {
   const buttonStyle = [
@@ -43,6 +44,7 @@ const FirstSection = () => {
           ))}
         </div>
       </div>
+      <TrustedCompanies />
     </section>
   );
 };
