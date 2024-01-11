@@ -1,5 +1,9 @@
-
+import HeaderContainer from "@/components/HeaderContainer";
 
 export default function Home() {
-  return <div></div>;
+  return (
+    <div>
+      <HeaderContainer />
+    </div>
+  );
 }
