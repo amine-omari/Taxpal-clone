@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const TrustedCompanies = () => {
   return (
-    <div>TrustedCompanies</div>
-  )
-}
+    <div>
+      <div>
+        <p>Trusted by these six companies so far</p>
+      </div>
+    </div>
+  );
+};
 
-export default TrustedCompanies
+export default TrustedCompanies;
