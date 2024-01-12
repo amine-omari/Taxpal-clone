@@ -10,7 +10,7 @@ const SectionHeader = ({
   return (
     <div className={`${largeSpace ? "space-y-6" : "space-y-4"}`}>
       <h2
-        className={`text-[32px] font-semibold leading-10 ${
+        className={`text-[32px] font-medium leading-10 tracking-wide ${
           titleTextWhite && "text-white"
         }`}
       >
