@@ -1,5 +1,4 @@
 import React from "react";
-import InnerContainer_SecondSetion from "./InnerContainer_SecondSetion";
 
 const FeaturesSection = () => {
   return (
@@ -13,7 +12,6 @@ const FeaturesSection = () => {
           like tax compliance.
         </p>
       </div>
-      <InnerContainer_SecondSetion />
     </section>
   );
 };
