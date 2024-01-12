@@ -1,8 +1,14 @@
 import React from "react";
 
-const SectionHeader = ({ title, text, titleTextWhite = false, textColor }) => {
+const SectionHeader = ({
+  title,
+  text,
+  titleTextWhite = false,
+  textColor,
+  largeSpace = false,
+}) => {
   return (
-    <div className="space-y-6">
+    <div className={`${largeSpace ? "space-y-6" : "space-y-4"}`}>
       <h2
         className={`text-[32px] font-semibold leading-10 ${
           titleTextWhite && "text-white"
