@@ -46,6 +46,8 @@ const FeaturesSection = () => {
       title="Everything you need to run your books."
       text="Well everything you need if you aren’t that picky about minor details
         like tax compliance."
+      titleTextWhite={true}
+      textColor="text-blue-100"
       bgBlue={true}
       padding="pb-28 pt-20"
     >
