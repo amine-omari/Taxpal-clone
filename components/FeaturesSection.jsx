@@ -1,10 +1,10 @@
 import React from "react";
 import InnerContainer_SecondSetion from "./InnerContainer_SecondSetion";
 
-const SecondSection = () => {
+const FeaturesSection = () => {
   return (
-    <section className="bg-blue-600 px-4 pb-28 pt-20">
-      <div className="space-y-6">
+    <section className="bg-blue-600 pb-28 pt-20">
+      <div className="space-y-6 px-4">
         <h2 className="text-[32px] font-semibold text-white">
           Everything you need to run your books.
         </h2>
@@ -18,4 +18,4 @@ const SecondSection = () => {
   );
 };
 
-export default SecondSection;
+export default FeaturesSection;
