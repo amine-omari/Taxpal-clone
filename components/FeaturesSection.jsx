@@ -51,7 +51,7 @@ const FeaturesSection = () => {
     >
       <div className="mt-16 pt-10">
         <div>
-          <div className="absolute right-0 top-60 h-[26%] w-full border border-white/10 bg-white/10"></div>
+          <div className="absolute right-0 top-[313px] h-[255px] w-full border border-white/10 bg-white/10"></div>
           <div className="absolute right-0 flex w-full space-x-4 overflow-x-scroll px-4 pb-4">
             {buttonInfo.map(({ id, button }) => (
               <button
