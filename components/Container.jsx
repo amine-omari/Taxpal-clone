@@ -4,6 +4,8 @@ import SectionHeader from "./SectionHeader";
 const Container = ({
   title,
   text,
+  titleTextWhite,
+  textColor,
   bgBlue = false,
   bgDarkBlue = false,
   padding,
@@ -16,7 +18,12 @@ const Container = ({
       } ${padding} relative`}
     >
       <div className="overflow-hidden px-4">
-        <SectionHeader title={title} text={text} />
+        <SectionHeader
+          title={title}
+          text={text}
+          titleTextWhite={titleTextWhite}
+          textColor={textColor}
+        />
         {children}
       </div>
     </section>
