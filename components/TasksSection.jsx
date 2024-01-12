@@ -1,8 +1,9 @@
 import React from 'react'
+import Container from './Container'
 
 const TasksSection = () => {
   return (
-    <div>TasksSection</div>
+    <Container>TasksSection</Container>
   )
 }
 
