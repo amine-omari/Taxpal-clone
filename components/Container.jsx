@@ -1,10 +1,14 @@
 import React from "react";
 import SectionHeader from "./SectionHeader";
 
-const Container = () => {
+const Container = ({ title, text, bgBlue = false, bgDarkBlue = false }) => {
   return (
-    <section>
-      <SectionHeader />
+    <section
+      className={`${bgBlue && "bg-blue-600"} ${bgDarkBlue && "bg-slate-900"}`}
+    >
+      <div className="relative px-4">
+        <SectionHeader title={title} text={text} />
+      </div>
     </section>
   );
 };
