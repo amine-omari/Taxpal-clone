@@ -3,7 +3,7 @@ import React from "react";
 const SecondSection = () => {
   return (
     <section>
-      <div>
+      <div className="space-y-6">
         <h2>
           Everything you need to run your books.
         </h2>
