@@ -1,4 +1,5 @@
 import React from "react";
+import InnerContainer_SecondSetion from "./InnerContainer_SecondSetion";
 
 const SecondSection = () => {
   return (
@@ -12,6 +13,7 @@ const SecondSection = () => {
           like tax compliance.
         </p>
       </div>
+      <InnerContainer_SecondSetion />
     </section>
   );
 };
