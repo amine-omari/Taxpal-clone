@@ -17,7 +17,7 @@ const Container = ({
     >
       <div className="relative px-4">
         <SectionHeader title={title} text={text} />
-        <div>{children}</div>
+        {children}
       </div>
     </section>
   );
