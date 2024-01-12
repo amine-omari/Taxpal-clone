@@ -2,7 +2,7 @@ import React from "react";
 
 const SectionHeader = ({ title, text }) => {
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 px-4">
       <h2 className="text-[32px] font-semibold leading-10 text-white">
         {title}
       </h2>
