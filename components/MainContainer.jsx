@@ -1,12 +1,12 @@
 import React from "react";
-import FirstSection from "./FirstSection";
-import SecondSection from "./SecondSection";
+import HeroSection from "./HeroSection";
+import FeaturesSection from "./FeaturesSection";
 
 const MainContainer = () => {
   return (
     <main>
-      <FirstSection />
-      <SecondSection />
+      <HeroSection />
+      <FeaturesSection />
     </main>
   );
 };
