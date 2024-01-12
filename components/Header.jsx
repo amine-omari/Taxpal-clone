@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 
-const HeaderContainer = () => {
+const Header = () => {
   return (
     <header className="py-10">
       <Navbar />
@@ -9,4 +9,4 @@ const HeaderContainer = () => {
   );
 };
 
-export default HeaderContainer;
+export default Header;
