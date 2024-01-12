@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import TrustedCompanies from "./TrustedCompanies";
 
-const FirstSection = () => {
+const HeroSection = () => {
   const buttonStyle = [
     {
       id: 1,
@@ -49,4 +49,4 @@ const FirstSection = () => {
   );
 };
 
-export default FirstSection;
+export default HeroSection;
