@@ -1,7 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "./Container";
 
 const FeaturesSection = () => {
+  const [text, setText] = useState();
+  const buttonInfo = [
+    {
+      id: 1,
+      button: "Payroll",
+      text: "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
+    },
+    {
+      id: 2,
+      button: "Claim expenses",
+      text: "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
+    },
+    {
+      id: 3,
+      button: "VAT handling",
+      text: "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
+    },
+    {
+      id: 4,
+      button: "Reporting",
+      text: "Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.",
+    },
+  ];
   return (
     <Container
       title="Everything you need to run your books."
@@ -9,7 +32,22 @@ const FeaturesSection = () => {
         like tax compliance."
       bgBlue={true}
       padding="pb-28 pt-20"
-    ></Container>
+    >
+      <div className="mt-16 pt-10">
+        <div>
+          <div className="absolute right-0 flex w-full space-x-4 overflow-x-scroll pb-4">
+            {buttonInfo.map(({ id, button }) => (
+              <button
+                key={id}
+                className="whitespace-nowrap px-4 py-1 text-lg font-medium text-blue-100 hover:bg-white/10 hover:text-white rounded-full duration-300"
+              >
+                {button}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+    </Container>
   );
 };
 
