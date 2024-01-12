@@ -3,9 +3,9 @@ import SectionHeader from "./SectionHeader";
 
 const Container = () => {
   return (
-    <div>
+    <section>
       <SectionHeader />
-    </div>
+    </section>
   );
 };
 
