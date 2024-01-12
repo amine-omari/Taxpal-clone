@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import SectionHeader from "./SectionHeader";
 
 const Container = () => {
   return (
-    <div>Container</div>
-  )
-}
+    <div>
+      <SectionHeader />
+    </div>
+  );
+};
 
-export default Container
+export default Container;
