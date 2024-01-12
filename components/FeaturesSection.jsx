@@ -3,6 +3,7 @@ import Container from "./Container";
 
 const FeaturesSection = () => {
   const [text, setText] = useState();
+
   const buttonInfo = [
     {
       id: 1,
@@ -25,6 +26,14 @@ const FeaturesSection = () => {
       text: "Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.",
     },
   ];
+
+  const showText = (id) => {
+    const selectedButton = buttonInfo.find((button) => button.id === id);
+    if (selectedButton) {
+      setText(selectedButton.text);
+    }
+  };
+
   return (
     <Container
       title="Everything you need to run your books."
@@ -39,12 +48,18 @@ const FeaturesSection = () => {
             {buttonInfo.map(({ id, button }) => (
               <button
                 key={id}
-                className="whitespace-nowrap px-4 py-1 text-lg font-medium text-blue-100 hover:bg-white/10 hover:text-white rounded-full duration-300"
+                onClick={() => showText(id)}
+                className="whitespace-nowrap rounded-full px-4 py-1 text-lg font-medium text-blue-100 duration-300 hover:bg-white/10 hover:text-white"
               >
                 {button}
               </button>
             ))}
           </div>
+          <p className="pt-16 text-white text-lg">
+            {text
+              ? text
+              : "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported."}
+          </p>
         </div>
       </div>
     </Container>
