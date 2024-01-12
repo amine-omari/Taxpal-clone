@@ -15,7 +15,7 @@ const Container = ({
         bgDarkBlue && "bg-slate-900"
       } ${padding} relative`}
     >
-      <div className="relative overflow-hidden px-4">
+      <div className="overflow-hidden px-4">
         <SectionHeader title={title} text={text} />
         {children}
       </div>
