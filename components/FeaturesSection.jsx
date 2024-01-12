@@ -49,16 +49,14 @@ const FeaturesSection = () => {
               <button
                 key={id}
                 onClick={() => showText(id)}
-                className="whitespace-nowrap rounded-full px-4 py-1 text-lg font-medium text-blue-100 duration-300 hover:bg-white/10 hover:text-white"
+                className="whitespace-nowrap rounded-full px-4 py-1 text-lg font-medium text-blue-100 duration-300 hover:bg-white/10 hover:text-white focus:bg-white focus:text-blue-600"
               >
                 {button}
               </button>
             ))}
           </div>
-          <p className="pt-16 text-white text-lg">
-            {text
-              ? text
-              : "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported."}
+          <p className="pt-20 text-lg text-white">
+            {text ? text : buttonInfo[0].text}
           </p>
         </div>
       </div>
