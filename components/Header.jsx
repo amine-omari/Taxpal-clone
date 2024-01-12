@@ -1,14 +1,10 @@
-import LogoIcon from "@/icons/LogoIcon";
-import MenuIcon from "@/icons/MenuIcon";
-import Xmark from "@/icons/Xmark";
-import Link from "next/link";
 import React, { useState } from "react";
-import MenuContainer from "./MenuContainer";
+import Navbar from "./Navbar";
 
 const HeaderContainer = () => {
-
   return (
     <header className="py-10">
+      <Navbar />
     </header>
   );
 };
