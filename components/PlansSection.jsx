@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "./Container";
+import PlansCard from "./PlansCard";
 
 const PlansSection = () => {
   return (
@@ -10,7 +11,11 @@ const PlansSection = () => {
       titleTextWhite={true}
       textColor="text-slate-400"
       padding="py-20"
-    ></Container>
+    >
+      <div>
+        <PlansCard />
+      </div>
+    </Container>
   );
 };
 
