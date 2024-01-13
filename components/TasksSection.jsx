@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "./Container";
 import ReportingIcon from "@/icons/ReportingIcon";
+import InventoryIcon from "@/icons/InventoryIcon";
 
 const TasksSection = () => {
   const Tasks = [
@@ -15,7 +16,7 @@ const TasksSection = () => {
     },
     {
       id: 2,
-      icon: "",
+      icon: <InventoryIcon />,
       title: "Inventory",
       text1:
         "Never lose track of what’s in stock with accurate inventory tracking.",
