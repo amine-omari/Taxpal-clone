@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer>
-      <div>
+      <div className="py-16">
         <div className="flex justify-center">
           <LogoIcon />
         </div>
