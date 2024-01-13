@@ -1,10 +1,10 @@
 import Link from "next/link";
 import React from "react";
 
-const PlansCard = ({ amount, businessType, text, children }) => {
+const PlansCard = ({ amount, businessType, text, bgBlue = false, children }) => {
   return (
     <div className="relative px-2 py-8 text-white">
-      <div className="absolute -left-4 -right-4 top-0 h-full rounded-3xl bg-blue-600"></div>
+      {bgBlue && <div className="absolute -left-4 -right-4 top-0 h-full rounded-3xl bg-blue-600"></div>}
       <div className="relative">
         <p className="text-5xl">{amount}</p>
         <h3 className="mt-7 text-lg font-semibold tracking-wide">
