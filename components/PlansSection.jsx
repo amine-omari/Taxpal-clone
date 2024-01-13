@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "./Container";
 import PlansCard from "./PlansCard";
+import CircleCheckIcon from "@/icons/CircleCheckIcon";
 
 const PlansSection = () => {
   const smallBusinessServices = [
@@ -90,7 +91,21 @@ const PlansSection = () => {
       padding="py-20"
     >
       <div className="mt-16">
-        <PlansCard />
+        <PlansCard
+          amount="$15"
+          businessType="Small business"
+          text="Perfect for small / medium sized businesses."
+          bgBlue={true}
+        >
+          {smallBusinessServices.map(({ id, text }) => (
+            <div key={id} className="flex space-x-4">
+              <span>
+                <CircleCheckIcon />
+              </span>
+              <p>{text}</p>
+            </div>
+          ))}
+        </PlansCard>
       </div>
     </Container>
   );
