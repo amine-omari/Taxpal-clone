@@ -2,6 +2,7 @@ import React from "react";
 import Container from "./Container";
 import ReportingIcon from "@/icons/ReportingIcon";
 import InventoryIcon from "@/icons/InventoryIcon";
+import ContactsIcon from "@/icons/ContactsIcon";
 
 const TasksSection = () => {
   const Tasks = [
@@ -26,7 +27,7 @@ const TasksSection = () => {
     },
     {
       id: 3,
-      icon: "",
+      icon: <ContactsIcon />,
       title: "Contacts",
       text1:
         "Organize all of your contacts, service providers, and invoices in one place.",
