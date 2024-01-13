@@ -6,7 +6,7 @@ const TasksSection = () => {
   const Tasks = [
     {
       id: 1,
-      icon: "",
+      icon: <ReportingIcon />,
       title: "Reporting",
       text1: "Stay on top of things with always up-to-date reporting features.",
       text2:
@@ -47,9 +47,7 @@ const TasksSection = () => {
           {Tasks.map(({ id, icon, title, text1, text2, src }) => (
             <div key={id}>
               <div>
-                <div className="flex w-9 rounded-lg bg-blue-600">
-                  <ReportingIcon />
-                </div>
+                <div className="flex w-9 rounded-lg bg-blue-600">{icon}</div>
               </div>
             </div>
           ))}
