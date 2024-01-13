@@ -3,7 +3,9 @@ import QA from "./QA";
 
 const QuestionsContainer = () => {
   return (
-    <ul>
+    <ul className="space-y-8">
+      <QA />
+      <QA />
       <QA />
     </ul>
   );
