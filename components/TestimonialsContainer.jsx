@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import TestimonialsCard from "./TestimonialsCard";
 
 const TestimonialsContainer = () => {
   return (
-    <div>TestimonialsContainer</div>
-  )
-}
+    <div>
+      <TestimonialsCard />
+      <TestimonialsCard />
+    </div>
+  );
+};
 
-export default TestimonialsContainer
+export default TestimonialsContainer;
