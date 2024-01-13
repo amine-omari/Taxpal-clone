@@ -107,7 +107,7 @@ const PlansSection = () => {
           ))}
         </PlansCard>
         <PlansCard
-          amount="$15"
+          amount="$9"
           businessType="starter"
           text="Good for anyone who is self-employed and just getting started."
         >
@@ -121,7 +121,7 @@ const PlansSection = () => {
           ))}
         </PlansCard>
         <PlansCard
-          amount="$15"
+          amount="$39"
           businessType="Enterprise"
           text="For even the biggest enterprise companies."
         >
