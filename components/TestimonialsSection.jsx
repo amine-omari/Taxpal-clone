@@ -50,6 +50,7 @@ const TestimonialsSection = () => {
         "https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-4.16b4e29e.png&w=128&q=75",
     },
   ];
+
   return (
     <Container
       title="Loved by businesses worldwide."
@@ -58,7 +59,7 @@ const TestimonialsSection = () => {
       padding="py-20"
       bgLightGray={true}
     >
-      <div className="mt-16">
+      <div className="mt-16 space-y-6">
         {cardInfo.map(
           ({
             id,
@@ -71,7 +72,17 @@ const TestimonialsSection = () => {
             secondCardPosition,
             secondCardSrc,
           }) => (
-            <TestimonialsContainer />
+            <TestimonialsContainer
+              key={id}
+              firstCardText={firstCardText}
+              firstCardName={firstCardName}
+              firstCardPosition={firstCardPosition}
+              firstCardSrc={firstCardSrc}
+              secondCardText={secondCardText}
+              secondCardName={secondCardName}
+              secondCardPosition={secondCardPosition}
+              secondCardSrc={secondCardSrc}
+            />
           ),
         )}
       </div>
