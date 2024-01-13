@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const TestimonialsCard = () => {
@@ -10,6 +11,19 @@ const TestimonialsCard = () => {
         </p>
       </blockquote>
       <figcaption>
+        <div>
+          <h3>Sheryl Berge</h3>
+          <p>CEO at Lynch LLC</p>
+        </div>
+        <div>
+          <Image
+            src="https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar-1.c78616b7.png&w=128&q=75"
+            alt="profile img"
+            width={56}
+            height={56}
+            className="rounded-full"
+          />
+        </div>
       </figcaption>
     </figure>
   );
