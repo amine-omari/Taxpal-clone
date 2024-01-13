@@ -58,8 +58,9 @@ const TasksSection = () => {
                 {text2}
               </p>
             </div>
-            <div className="relative mt-10 overflow-hidden pb-10">
-              <div className="w-[844px]">
+            <div className="relative mt-10 pb-10">
+              <div className="absolute -left-4 -right-4 bottom-0 h-[95%] bg-slate-200"></div>
+              <div className="relative w-[844px]">
                 <Image
                   src={src}
                   alt="tasks image"
