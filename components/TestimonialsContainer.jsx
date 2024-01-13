@@ -12,7 +12,7 @@ const TestimonialsContainer = ({
   secondCardSrc,
 }) => {
   return (
-    <div>
+    <div className="space-y-6">
       <TestimonialsCard
         cardText={firstCardText}
         name={firstCardName}
