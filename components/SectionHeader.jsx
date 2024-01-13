@@ -6,10 +6,14 @@ const SectionHeader = ({
   titleTextWhite = false,
   textColor,
   largeSpace = false,
-  textCenter
+  textCenter,
 }) => {
   return (
-    <div className={`${largeSpace ? "space-y-6" : "space-y-4"} ${textCenter} relative`}>
+    <div
+      className={`${
+        largeSpace ? "space-y-6" : "space-y-4"
+      } ${textCenter} relative`}
+    >
       <h2
         className={`text-[32px] font-medium leading-10 tracking-wide ${
           titleTextWhite && "text-white"
