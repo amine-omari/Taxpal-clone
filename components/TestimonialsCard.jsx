@@ -1,16 +1,18 @@
-import React from 'react'
+import React from "react";
 
 const TestimonialsCard = () => {
   return (
     <figure>
-      <div>
+      <blockquote>
         <p>
           TaxPal is so easy to use I can’t help but wonder if it’s really doing
           the things the government expects me to do.
         </p>
-      </div>
+      </blockquote>
+      <figcaption>
+      </figcaption>
     </figure>
   );
-}
+};
 
-export default TestimonialsCard
+export default TestimonialsCard;
