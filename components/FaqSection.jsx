@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "./Container";
+import QuestionsContainer from "./QuestionsContainer";
 
 const FaqSection = () => {
   return (
@@ -8,7 +9,9 @@ const FaqSection = () => {
       text="If you can’t find what you’re looking for, email our support team and if you’re lucky someone will get back to you."
       bgLightGray={true}
       padding="py-20"
-    ></Container>
+    >
+      <QuestionsContainer />
+    </Container>
   );
 };
 
