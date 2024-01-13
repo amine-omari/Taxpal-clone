@@ -8,6 +8,7 @@ const Container = ({
   titleTextWhite,
   textColor,
   largeSpace,
+  textCenter,
   bgBlue = false,
   bgDarkBlue = false,
   padding,
@@ -40,6 +41,7 @@ const Container = ({
           titleTextWhite={titleTextWhite}
           textColor={textColor}
           largeSpace={largeSpace}
+          textCenter={textCenter}
         />
         {children}
       </div>
