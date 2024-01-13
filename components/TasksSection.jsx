@@ -3,6 +3,7 @@ import Container from "./Container";
 import ReportingIcon from "@/icons/ReportingIcon";
 import InventoryIcon from "@/icons/InventoryIcon";
 import ContactsIcon from "@/icons/ContactsIcon";
+import Image from "next/image";
 
 const TasksSection = () => {
   const Tasks = [
@@ -53,7 +54,21 @@ const TasksSection = () => {
                 {title}
               </h3>
               <p className="mt-3 text-xl font-medium leading-8">{text1}</p>
-              <p className="mt-4 text-sm text-slate-600 tracking-wide leading-6">{text2}</p>
+              <p className="mt-4 text-sm leading-6 tracking-wide text-slate-600">
+                {text2}
+              </p>
+            </div>
+            <div className="relative mt-10 overflow-hidden pb-10">
+              <div className="w-[844px]">
+                <Image
+                  src={src}
+                  alt="tasks image"
+                  width={844}
+                  height={427}
+                  className="rounded-xl border border-slate-500/10"
+                  priority={true}
+                />
+              </div>
             </div>
           </div>
         ))}
