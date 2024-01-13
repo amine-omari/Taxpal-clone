@@ -3,6 +3,7 @@ import HeroSection from "./HeroSection";
 import FeaturesSection from "./FeaturesSection";
 import TasksSection from "./TasksSection";
 import CtaBanner from "./CtaBanner";
+import TestimonialsSection from "./TestimonialsSection";
 
 const MainContainer = () => {
   return (
@@ -11,6 +12,7 @@ const MainContainer = () => {
       <FeaturesSection />
       <TasksSection />
       <CtaBanner />
+      <TestimonialsSection />
     </main>
   );
 };
