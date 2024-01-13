@@ -5,6 +5,7 @@ import TasksSection from "./TasksSection";
 import CtaBanner from "./CtaBanner";
 import TestimonialsSection from "./TestimonialsSection";
 import PlansSection from "./PlansSection";
+import FaqSection from "./FaqSection";
 
 const MainContainer = () => {
   return (
@@ -15,6 +16,7 @@ const MainContainer = () => {
       <CtaBanner />
       <TestimonialsSection />
       <PlansSection />
+      <FaqSection />
     </main>
   );
 };
