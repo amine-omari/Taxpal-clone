@@ -46,10 +46,10 @@ const TasksSection = () => {
         <div>
           {Tasks.map(({ id, icon, title, text1, text2, src }) => (
             <div key={id}>
-              <div className="flex">
-                <span className="rounded-lg bg-blue-600">
+              <div>
+                <div className="flex w-9 rounded-lg bg-blue-600">
                   <ReportingIcon />
-                </span>
+                </div>
               </div>
             </div>
           ))}
