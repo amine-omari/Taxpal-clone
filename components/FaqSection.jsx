@@ -10,6 +10,10 @@ const FaqSection = () => {
       textColor="text-slate-700"
       bgLightGray={true}
       padding="py-20"
+      gradientImg={true}
+      src="https://salient.tailwindui.com/_next/static/media/background-faqs.55d2e36a.jpg"
+      width={1558}
+      height={946}
     >
       <div className="mt-16 space-y-8">
         <QuestionsContainer
