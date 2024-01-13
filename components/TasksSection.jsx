@@ -49,9 +49,11 @@ const TasksSection = () => {
           <div key={id}>
             <div>
               <div className="flex w-9 rounded-lg bg-blue-600">{icon}</div>
-              <h3 className="mt-6">{title}</h3>
-              <p className="mt-2">{text1}</p>
-              <p className="mt-4">{text2}</p>
+              <h3 className="mt-6 text-sm font-medium text-blue-600">
+                {title}
+              </h3>
+              <p className="mt-3 text-xl font-medium leading-8">{text1}</p>
+              <p className="mt-4 text-sm text-slate-600 tracking-wide leading-6">{text2}</p>
             </div>
           </div>
         ))}
