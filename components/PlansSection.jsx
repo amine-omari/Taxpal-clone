@@ -12,7 +12,7 @@ const PlansSection = () => {
       textColor="text-slate-400"
       padding="py-20"
     >
-      <div>
+      <div className="mt-16">
         <PlansCard />
       </div>
     </Container>
