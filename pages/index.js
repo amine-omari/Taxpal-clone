@@ -1,9 +1,11 @@
-import HeaderContainer from "@/components/HeaderContainer";
+import Header from "@/components/Header";
+import MainContainer from "@/components/MainContainer";
 
 export default function Home() {
   return (
     <div>
-      <HeaderContainer />
+      <Header />
+      <MainContainer />
     </div>
   );
 }
