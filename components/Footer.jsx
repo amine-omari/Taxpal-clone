@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="flex justify-center">
           <LogoIcon />
         </div>
-        <div>
+        <div className="flex justify-center space-x-6">
           {links.map(({ id, text }) => (
             <Link key={id} href="/">
               {text}
