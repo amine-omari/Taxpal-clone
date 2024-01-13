@@ -6,8 +6,6 @@ const PlansCard = ({
   businessType,
   text,
   bgBlue = false,
-  textSlate200 = false,
-  textSlate400 = false,
   children,
 }) => {
   return (
@@ -20,7 +18,7 @@ const PlansCard = ({
         <h3 className="mt-7 text-lg font-semibold tracking-wide">
           {businessType}
         </h3>
-        <p className={`${textSlate400 && "text-slate-400"} mt-3 tracking-wide`}>
+        <p className={`${!bgBlue && "text-slate-400"} mt-3 tracking-wide`}>
           {text}
         </p>
         <Link
@@ -30,9 +28,7 @@ const PlansCard = ({
           Get started
         </Link>
         <div
-          className={`${
-            textSlate200 && "text-slate-200"
-          } mt-10 space-y-3.5 text-sm`}
+          className={`${!bgBlue && "text-slate-200"} mt-10 space-y-3.5 text-sm`}
         >
           {children}
         </div>
