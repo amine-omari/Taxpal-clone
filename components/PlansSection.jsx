@@ -90,7 +90,7 @@ const PlansSection = () => {
       textColor="text-slate-400"
       padding="py-20"
     >
-      <div className="mt-16">
+      <div className="mt-16 space-y-10">
         <PlansCard
           amount="$15"
           businessType="Small business"

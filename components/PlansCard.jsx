@@ -9,7 +9,7 @@ const PlansCard = ({
   children,
 }) => {
   return (
-    <div className="relative px-2 py-8 text-white">
+    <div className={`relative px-2 text-white ${bgBlue && "py-8"}`}>
       {bgBlue && (
         <div className="absolute -left-4 -right-4 top-0 h-full rounded-3xl bg-blue-600"></div>
       )}
