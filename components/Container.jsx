@@ -11,6 +11,7 @@ const Container = ({
   textCenter,
   bgBlue = false,
   bgDarkBlue = false,
+  bgLightGray = false,
   padding,
   gradientImg = false,
   src,
@@ -22,8 +23,8 @@ const Container = ({
   return (
     <section
       className={`${bgBlue && "bg-blue-600"} ${
-        bgDarkBlue && "bg-slate-900"
-      } ${padding} relative overflow-hidden`}
+        bgLightGray && "text-slate-50"
+      } ${bgDarkBlue && "bg-slate-900"} ${padding} relative overflow-hidden`}
     >
       {gradientImg && (
         <Image
