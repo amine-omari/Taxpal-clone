@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import Container from "./Container";
 
 const FaqSection = () => {
-  return (
-    <div>FaqSection</div>
-  )
-}
+  return <Container>FaqSection</Container>;
+};
 
-export default FaqSection
+export default FaqSection;
