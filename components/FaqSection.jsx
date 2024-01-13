@@ -11,7 +11,9 @@ const FaqSection = () => {
       bgLightGray={true}
       padding="py-20"
     >
-      <QuestionsContainer />
+      <div className="mt-16">
+        <QuestionsContainer />
+      </div>
     </Container>
   );
 };
