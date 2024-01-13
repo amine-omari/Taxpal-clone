@@ -1,5 +1,6 @@
 import React from "react";
 import SectionHeader from "./SectionHeader";
+import Image from "next/image";
 
 const Container = ({
   title,
@@ -10,6 +11,11 @@ const Container = ({
   bgBlue = false,
   bgDarkBlue = false,
   padding,
+  gradientImg = false,
+  src,
+  width,
+  height,
+  gradientStyle,
   children,
 }) => {
   return (
@@ -18,6 +24,14 @@ const Container = ({
         bgDarkBlue && "bg-slate-900"
       } ${padding} relative`}
     >
+      {gradientImg && (
+        <Image
+          src={src}
+          width={width}
+          height={height}
+          className={gradientStyle}
+        />
+      )}
       <div className="overflow-hidden px-4">
         <SectionHeader
           title={title}
