@@ -32,6 +32,7 @@ const Container = ({
           width={width}
           height={height}
           className={gradientStyle}
+          priority={true}
         />
       )}
       <div className="relative px-4">
