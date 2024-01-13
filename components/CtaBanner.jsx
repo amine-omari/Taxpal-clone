@@ -9,6 +9,8 @@ const CtaBanner = () => {
       titleTextWhite={true}
       textColor="text-white"
       bgBlue={true}
+      padding="py-32"
+      textCenter="text-center"
     ></Container>
   );
 };
