@@ -50,6 +50,9 @@ const TasksSection = () => {
             <div key={id}>
               <div>
                 <div className="flex w-9 rounded-lg bg-blue-600">{icon}</div>
+                <h3>{title}</h3>
+                <p>{text1}</p>
+                <p>{text2}</p>
               </div>
             </div>
           ))}
