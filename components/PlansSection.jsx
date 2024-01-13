@@ -1,8 +1,9 @@
 import React from 'react'
+import Container from './Container'
 
 const PlansSection = () => {
   return (
-    <div>PlansSection</div>
+    <Container>PlansSection</Container>
   )
 }
 
