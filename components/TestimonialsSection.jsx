@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import Container from "./Container";
 
 const TestimonialsSection = () => {
-  return (
-    <div>TestimonialsSection</div>
-  )
-}
+  return <Container>TestimonialsSection</Container>;
+};
 
-export default TestimonialsSection
+export default TestimonialsSection;
