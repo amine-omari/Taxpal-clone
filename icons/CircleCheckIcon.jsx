@@ -8,8 +8,8 @@ const CircleCheckIcon = () => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      width={24}
-      height={24}
+      width={22}
+      height={22}
     >
       <path
         strokeLinecap="round"
