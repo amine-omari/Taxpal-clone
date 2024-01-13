@@ -22,17 +22,18 @@ const Container = ({
     <section
       className={`${bgBlue && "bg-blue-600"} ${
         bgDarkBlue && "bg-slate-900"
-      } ${padding} relative`}
+      } ${padding} relative overflow-hidden`}
     >
       {gradientImg && (
         <Image
           src={src}
+          alt="gradient image"
           width={width}
           height={height}
           className={gradientStyle}
         />
       )}
-      <div className="overflow-hidden px-4">
+      <div className="relative px-4">
         <SectionHeader
           title={title}
           text={text}
