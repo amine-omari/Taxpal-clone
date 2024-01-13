@@ -44,19 +44,17 @@ const TasksSection = () => {
       textColor="text-slate-700"
       padding="pt-20 pb-14"
     >
-      <div>
-        <div>
-          {Tasks.map(({ id, icon, title, text1, text2, src }) => (
-            <div key={id}>
-              <div>
-                <div className="flex w-9 rounded-lg bg-blue-600">{icon}</div>
-                <h3>{title}</h3>
-                <p>{text1}</p>
-                <p>{text2}</p>
-              </div>
+      <div className="mt-20 space-y-10">
+        {Tasks.map(({ id, icon, title, text1, text2, src }) => (
+          <div key={id}>
+            <div>
+              <div className="flex w-9 rounded-lg bg-blue-600">{icon}</div>
+              <h3 className="mt-6">{title}</h3>
+              <p className="mt-2">{text1}</p>
+              <p className="mt-4">{text2}</p>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </Container>
   );
