@@ -51,10 +51,15 @@ const FeaturesSection = () => {
       largeSpace={true}
       bgBlue={true}
       padding="pb-28 pt-20"
+      gradientImg={true}
+      src="https://salient.tailwindui.com/_next/static/media/background-features.5f7a9ac9.jpg"
+      width={2245}
+      height={1636}
+      gradientStyle="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
     >
       <div className="mt-16 pt-10">
         <div>
-          <div className="absolute right-0 top-[313px] h-[255px] w-full border border-white/10 bg-white/10"></div>
+          <div className="absolute right-0 top-[232px] h-[27%] w-full border border-white/10 bg-white/10"></div>
           <div className="absolute right-0 flex w-full space-x-4 overflow-x-scroll px-4 pb-4">
             {buttonInfo.map(({ id, button }) => (
               <button
@@ -76,7 +81,7 @@ const FeaturesSection = () => {
             alt="imgs"
             width={1085}
             height={730}
-            className="w-full rounded-2xl"
+            className="w-full rounded-xl"
           />
         </div>
       </div>
