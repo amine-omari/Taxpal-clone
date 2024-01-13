@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import Container from "./Container";
 
 const CtaBanner = () => {
-  return (
-    <div>CtaBanner</div>
-  )
-}
+  return <Container>CtaBanner</Container>;
+};
 
-export default CtaBanner
+export default CtaBanner;
