@@ -106,6 +106,34 @@ const PlansSection = () => {
             </div>
           ))}
         </PlansCard>
+        <PlansCard
+          amount="$15"
+          businessType="starter"
+          text="Good for anyone who is self-employed and just getting started."
+        >
+          {smallBusinessServices.map(({ id, text }) => (
+            <div key={id} className="flex space-x-4">
+              <span className="text-slate-400">
+                <CircleCheckIcon />
+              </span>
+              <p>{text}</p>
+            </div>
+          ))}
+        </PlansCard>
+        <PlansCard
+          amount="$15"
+          businessType="Enterprise"
+          text="For even the biggest enterprise companies."
+        >
+          {smallBusinessServices.map(({ id, text }) => (
+            <div key={id} className="flex space-x-4">
+              <span className="text-slate-400">
+                <CircleCheckIcon />
+              </span>
+              <p>{text}</p>
+            </div>
+          ))}
+        </PlansCard>
       </div>
     </Container>
   );
