@@ -10,7 +10,9 @@ const TestimonialsSection = () => {
       textColor="text-slate-700"
       padding="py-20"
     >
-      <TestimonialsCard />
+      <div className="mt-16">
+        <TestimonialsCard />
+      </div>
     </Container>
   );
 };
