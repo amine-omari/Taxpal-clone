@@ -3,14 +3,14 @@ import React from "react";
 
 const TestimonialsCard = () => {
   return (
-    <figure>
+    <figure className="relative p-6 rounded-2xl bg-white shadow-xl shadow-slate-900/10">
       <blockquote>
-        <p>
+        <p className="text-lg leading-8">
           TaxPal is so easy to use I can’t help but wonder if it’s really doing
           the things the government expects me to do.
         </p>
       </blockquote>
-      <figcaption>
+      <figcaption className="mt-6 flex justify-between border-t border-slate-100 pt-6">
         <div>
           <h3>Sheryl Berge</h3>
           <p>CEO at Lynch LLC</p>
