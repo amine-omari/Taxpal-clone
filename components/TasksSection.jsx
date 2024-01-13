@@ -59,7 +59,7 @@ const TasksSection = () => {
               </p>
             </div>
             <div className="relative mt-10 pb-10">
-              <div className="absolute -left-4 -right-4 bottom-0 h-[95%] bg-slate-200"></div>
+              <div className="absolute -left-4 -right-4 bottom-0 h-[93%] bg-slate-200"></div>
               <div className="relative w-[844px]">
                 <Image
                   src={src}
