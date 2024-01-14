@@ -19,7 +19,7 @@ const HeroSection = () => {
     },
   ];
   return (
-    <section className="px-4 pb-16 pt-20">
+    <section className="px-4 pb-16 pt-20 sm:px-6">
       <div className="text-center">
         <h1 className="text-5xl font-semibold leading-[55px]">
           Accounting
