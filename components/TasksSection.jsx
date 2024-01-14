@@ -53,13 +53,15 @@ const TasksSection = () => {
               <h3 className="mt-6 text-sm font-medium text-blue-600">
                 {title}
               </h3>
-              <p className="mt-3 text-xl font-medium tracking-wide leading-8">{text1}</p>
+              <p className="mt-3 text-xl font-medium leading-8 tracking-wide">
+                {text1}
+              </p>
               <p className="mt-4 text-sm leading-6 tracking-wide text-slate-600">
                 {text2}
               </p>
             </div>
             <div className="relative mt-10 pb-10">
-              <div className="absolute -left-4 -right-4 bottom-0 h-[93%] bg-slate-200"></div>
+              <div className="absolute -left-4 -right-4 bottom-0 h-[93%] bg-slate-200 sm:-left-6 sm:-right-6"></div>
               <div className="relative w-[844px]">
                 <Image
                   src={src}
