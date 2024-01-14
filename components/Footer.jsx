@@ -38,7 +38,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div>
+        <div className="py-10">
           <div className="flex justify-center space-x-6">
             <Link
               href="https://twitter.com/"
@@ -54,7 +54,7 @@ const Footer = () => {
             </Link>
           </div>
           <div className="mt-6 flex justify-center text-sm text-slate-500">
-            <p>Copyright © 2024 TaxPal. All rights reserved.</p>
+            <p className="tracking-wide">Copyright © 2024 TaxPal. All rights reserved.</p>
           </div>
         </div>
       </div>
