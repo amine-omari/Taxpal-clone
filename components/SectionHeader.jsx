@@ -15,13 +15,13 @@ const SectionHeader = ({
       } ${textCenter} relative`}
     >
       <h2
-        className={`text-[32px] font-medium leading-10 tracking-wide sm:text-[40px] ${
+        className={`text-[32px] font-medium leading-10 sm:leading-snug tracking-wide sm:text-[40px] ${
           titleTextWhite && "text-white"
         }`}
       >
         {title}
       </h2>
-      <p className={`text-lg leading-8 sm:tracking-[0.020em] ${textColor}`}>{text}</p>
+      <p className={`text-lg leading-8 ${textColor}`}>{text}</p>
     </div>
   );
 };
