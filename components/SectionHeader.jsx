@@ -21,7 +21,7 @@ const SectionHeader = ({
       >
         {title}
       </h2>
-      <p className={`text-lg leading-8 ${textColor}`}>{text}</p>
+      <p className={`text-lg leading-8 sm:tracking-[0.020em] ${textColor}`}>{text}</p>
     </div>
   );
 };
