@@ -85,12 +85,13 @@ const PlansSection = () => {
     <Container
       title="Simple pricing, for everyone."
       text="It doesn’t matter what size your business is, our software won’t work well for you."
+      textCenter="md:text-center"
       bgDarkBlue={true}
       titleTextWhite={true}
       textColor="text-slate-400"
-      padding="py-20"
+      padding="py-20 sm:py-32"
     >
-      <div className="mt-16 space-y-10">
+      <div className="mt-16 max-w-[640px] mx-auto space-y-10">
         <PlansCard
           amount="$15"
           businessType="Small business"
