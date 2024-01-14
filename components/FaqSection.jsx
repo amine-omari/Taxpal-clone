@@ -9,7 +9,7 @@ const FaqSection = () => {
       text="If you can’t find what you’re looking for, email our support team and if you’re lucky someone will get back to you."
       textColor="text-slate-700"
       bgLightGray={true}
-      padding="py-20"
+      padding="py-20 sm:py-32"
       gradientImg={true}
       src="https://salient.tailwindui.com/_next/static/media/background-faqs.55d2e36a.jpg"
       width={1558}
