@@ -49,15 +49,15 @@ const TrustedCompanies = () => {
       <div className="text-center font-medium">
         <p>Trusted by these six companies so far</p>
       </div>
-      <div className="mt-8 flex justify-center space-x-8">
-        <div className="space-y-8">
+      <div className="mt-8 flex justify-center space-x-8 sm:flex-col sm:space-x-0 sm:items-center sm:space-y-10">
+        <div className="space-y-8 sm:flex sm:space-y-0 sm:space-x-12">
           {firstGroupLogo.map(({ id, src, alt, width }) => (
             <div className="flex items-center justify-center" key={id}>
               <Image src={src} alt={alt} width={width} height={48} />
             </div>
           ))}
         </div>
-        <div className="space-y-8">
+        <div className="space-y-8 sm:flex sm:space-y-0 sm:space-x-12">
           {secondGroupLogo.map(({ id, src, alt, width }) => (
             <div className="flex items-center justify-center" key={id}>
               <Image src={src} alt={alt} width={width} height={48} />
