@@ -53,6 +53,9 @@ const Footer = () => {
               <Github />
             </Link>
           </div>
+          <div className="mt-6 flex justify-center text-sm text-slate-500">
+            <p>Copyright © 2024 TaxPal. All rights reserved.</p>
+          </div>
         </div>
       </div>
     </footer>
