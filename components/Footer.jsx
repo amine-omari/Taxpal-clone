@@ -1,3 +1,4 @@
+import Github from "@/icons/Github";
 import LogoIcon from "@/icons/LogoIcon";
 import Twitter from "@/icons/Twitter";
 import Link from "next/link";
@@ -43,6 +44,12 @@ const Footer = () => {
             className="fill-slate-500 duration-300 hover:fill-slate-700"
           >
             <Twitter />
+          </Link>
+          <Link
+            href="https://twitter.com/"
+            className="fill-slate-500 duration-300 hover:fill-slate-700"
+          >
+            <Github />
           </Link>
         </div>
       </div>
