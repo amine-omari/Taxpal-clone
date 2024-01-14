@@ -22,9 +22,9 @@ const Container = ({
 }) => {
   return (
     <section
-      className={`${bgBlue && "bg-blue-600"} ${
-        bgLightGray && "bg-slate-50"
-      } ${bgDarkBlue && "bg-slate-900"} ${padding} relative overflow-hidden`}
+      className={`${bgBlue && "bg-blue-600"} ${bgLightGray && "bg-slate-50"} ${
+        bgDarkBlue && "bg-slate-900"
+      } ${padding} relative overflow-hidden`}
     >
       {gradientImg && (
         <Image
