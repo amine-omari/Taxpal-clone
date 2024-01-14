@@ -10,7 +10,7 @@ const TestimonialsCard = ({ cardText, name, position, src }) => {
       </div>
       <div className="relative">
         <blockquote>
-          <p className="text-lg leading-8">{cardText}</p>
+          <p className="text-lg sm:tracking-[0.003em] leading-8">{cardText}</p>
         </blockquote>
         <figcaption className="mt-6 flex justify-between border-t border-slate-100 pt-6">
           <div className="flex flex-col justify-between">

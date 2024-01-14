@@ -56,10 +56,11 @@ const TestimonialsSection = () => {
       title="Loved by businesses worldwide."
       text="Our software is so simple that people can’t help but fall in love with it. Simplicity is easy when you just skip tons of mission-critical features."
       textColor="text-slate-700"
+      textCenter="md:text-center mx-auto max-w-[640px]"
       padding="py-20 sm:py-32"
       bgLightGray={true}
     >
-      <div className="mt-16 space-y-6">
+      <div className="mx-auto mt-16 max-w-[640px] space-y-6 sm:space-y-8">
         {cardInfo.map(
           ({
             id,
