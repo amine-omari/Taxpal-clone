@@ -28,9 +28,9 @@ const Navbar = () => {
 
   return (
     <nav className="flex items-center justify-between px-4 sm:px-6">
-      <div>
+      <div className="flex items-center md:space-x-12">
         <LogoIcon />
-        <div>
+        <div className="hidden md:flex space-x-8 text-sm">
           {links.map(({ id, text }) => (
             <Link
               key={id}
