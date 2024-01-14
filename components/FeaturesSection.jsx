@@ -57,6 +57,7 @@ const FeaturesSection = () => {
       width={2245}
       height={1636}
       gradientStyle="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
+      textLarge={true}
     >
       <div className="mt-16 pt-10 md:mt-20">
         <div className="sm:relative">
