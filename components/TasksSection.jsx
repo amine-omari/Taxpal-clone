@@ -43,7 +43,7 @@ const TasksSection = () => {
       title="Simplify everyday business tasks."
       text="Because you’d probably be a little confused if we suggested you complicate your everyday business tasks instead."
       textColor="text-slate-700"
-      padding="pt-20 pb-14"
+      padding="pt-20 pb-14 sm:pt-32 sm:pb-20"
     >
       <div className="mt-20 space-y-10">
         {Tasks.map(({ id, icon, title, text1, text2, src }) => (
@@ -53,7 +53,7 @@ const TasksSection = () => {
               <h3 className="mt-6 text-sm font-medium text-blue-600">
                 {title}
               </h3>
-              <p className="mt-3 text-xl font-medium leading-8">{text1}</p>
+              <p className="mt-3 text-xl font-medium tracking-wide leading-8">{text1}</p>
               <p className="mt-4 text-sm leading-6 tracking-wide text-slate-600">
                 {text2}
               </p>
