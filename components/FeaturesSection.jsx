@@ -48,6 +48,7 @@ const FeaturesSection = () => {
         like tax compliance."
       titleTextWhite={true}
       textColor="text-blue-100"
+      textCenter="md:text-center"
       largeSpace={true}
       bgBlue={true}
       padding="pb-28 pt-20 sm:py-32"
@@ -57,10 +58,10 @@ const FeaturesSection = () => {
       height={1636}
       gradientStyle="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
     >
-      <div className="mt-16 pt-10">
+      <div className="mt-16 pt-10 md:mt-20">
         <div className="sm:relative">
           <div className="absolute right-0 top-[232px] h-[27%] w-full border border-white/10 bg-white/10 sm:-top-[38px] sm:h-[228px] sm:rounded-xl"></div>
-          <div className="absolute right-0 flex w-full justify-between space-x-4 overflow-x-scroll px-4 pb-4 sm:justify-center sm:px-0">
+          <div className="absolute right-0 flex w-full justify-between space-x-4 overflow-x-scroll px-4 pb-4 sm:justify-center sm:px-0 md:overflow-hidden">
             {buttonInfo.map(({ id, button }) => (
               <button
                 key={id}
@@ -71,17 +72,17 @@ const FeaturesSection = () => {
               </button>
             ))}
           </div>
-          <p className="pt-16 text-lg text-white sm:text-center">
+          <p className="mx-auto max-w-2xl pt-16 text-lg text-white sm:text-center sm:leading-7">
             {text ? text : buttonInfo[0].text}
           </p>
         </div>
-        <div className="mt-10 w-[720px] sm:w-full">
+        <div className="mt-10 w-[720px] sm:w-auto">
           <Image
             src={imgSrc ? imgSrc : buttonInfo[0].src}
             alt="imgs"
             width={1085}
             height={730}
-            className="rounded-xl"
+            className="rounded-xl shadow-xl shadow-blue-900/20"
           />
         </div>
       </div>

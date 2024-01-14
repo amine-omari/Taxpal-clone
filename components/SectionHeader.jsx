@@ -15,7 +15,7 @@ const SectionHeader = ({
       } ${textCenter} relative mx-auto max-w-2xl`}
     >
       <h2
-        className={`text-[32px] font-medium leading-10 tracking-[0.01em] sm:text-[40px] sm:leading-snug md:text-5xl ${
+        className={`text-[32px] font-medium leading-10 tracking-[0.01em] sm:text-[40px] sm:leading-snug md:text-5xl md:leading-[55px] ${
           titleTextWhite && "text-white"
         }`}
       >
