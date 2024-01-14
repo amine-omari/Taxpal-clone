@@ -21,13 +21,13 @@ const HeroSection = () => {
   return (
     <section className="px-4 pb-16 pt-20 sm:px-6">
       <div className="text-center">
-        <h1 className="text-5xl font-semibold leading-[55px] sm:text-7xl sm:leading-[77px]">
+        <h1 className="mx-auto max-w-4xl text-5xl font-semibold leading-[55px] sm:text-7xl sm:leading-[77px]">
           Accounting
           <br />
           <span className="text-blue-600">made simple</span> for small
           businesses.
         </h1>
-        <p className="mt-6 px-2 text-lg leading-8 text-slate-700 sm:mt-7">
+        <p className="mx-auto mt-6 max-w-2xl px-6 text-lg leading-8 text-slate-700 sm:mt-7">
           Most bookkeeping software is accurate, but hard to use. We make the
           opposite trade-off, and hope you don’t get audited.
         </p>

@@ -43,7 +43,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="flex items-center space-x-6 md:space-x-9">
-        <div className="hidden md:flex text-sm">
+        <div className="hidden text-sm md:flex">
           <Link
             href="/"
             className="rounded-lg px-2 py-1 duration-300 hover:bg-slate-100 hover:text-slate-900"
