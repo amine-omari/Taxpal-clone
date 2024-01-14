@@ -11,10 +11,36 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const links = [
+    {
+      id: 1,
+      text: "Features",
+    },
+    {
+      id: 2,
+      text: " Testimonials",
+    },
+    {
+      id: 3,
+      text: "Pricing",
+    },
+  ];
+
   return (
     <nav className="flex items-center justify-between px-4 sm:px-6">
       <div>
         <LogoIcon />
+        <div>
+          {links.map(({ id, text }) => (
+            <Link
+              key={id}
+              href="/"
+              className="rounded-lg px-2 py-1 duration-300 hover:bg-slate-100 hover:text-slate-900"
+            >
+              {text}
+            </Link>
+          ))}
+        </div>
       </div>
       <div className="flex items-center space-x-6">
         <Link
