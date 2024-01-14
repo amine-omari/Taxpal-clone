@@ -36,7 +36,7 @@ const Container = ({
           priority={true}
         />
       )}
-      <div className="relative px-4">
+      <div className="relative px-4 sm:px-6">
         <SectionHeader
           title={title}
           text={text}
