@@ -59,13 +59,13 @@ const FeaturesSection = () => {
     >
       <div className="mt-16 pt-10">
         <div className="sm:relative">
-          <div className="absolute right-0 top-[232px] h-[27%] w-full rounded-xl border border-white/10 bg-white/10 sm:-top-[38px] sm:h-[228px]"></div>
-          <div className="absolute right-0 flex w-full justify-between space-x-4 overflow-x-scroll px-4 pb-4 sm:justify-center sm:space-x-6 sm:px-0">
+          <div className="absolute right-0 top-[232px] h-[27%] w-full border border-white/10 bg-white/10 sm:-top-[38px] sm:h-[228px] sm:rounded-xl"></div>
+          <div className="absolute right-0 flex w-full justify-between space-x-4 overflow-x-scroll px-4 pb-4 sm:justify-center sm:px-0">
             {buttonInfo.map(({ id, button }) => (
               <button
                 key={id}
                 onClick={() => showText(id)}
-                className="whitespace-nowrap rounded-full px-4 py-1.5 text-lg font-medium text-blue-100 duration-300 hover:bg-white/10 hover:text-white focus:bg-white focus:text-blue-600 "
+                className="whitespace-nowrap rounded-full px-4 py-1.5 text-lg font-medium tracking-wide text-blue-100 duration-300 hover:bg-white/10 hover:text-white focus:bg-white focus:text-blue-600 "
               >
                 {button}
               </button>
@@ -75,13 +75,13 @@ const FeaturesSection = () => {
             {text ? text : buttonInfo[0].text}
           </p>
         </div>
-        <div className="mt-10 w-[720px]">
+        <div className="mt-10 w-[720px] sm:w-full">
           <Image
             src={imgSrc ? imgSrc : buttonInfo[0].src}
             alt="imgs"
             width={1085}
             height={730}
-            className="w-full rounded-xl"
+            className="rounded-xl"
           />
         </div>
       </div>
