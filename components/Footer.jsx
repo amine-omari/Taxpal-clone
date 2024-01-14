@@ -20,25 +20,25 @@ const Footer = () => {
     },
   ];
   return (
-    <footer>
-      <div>
+    <footer className="bg-slate-50">
+      <div className="px-4">
         <div className="py-16">
           <div className="flex justify-center">
             <LogoIcon />
           </div>
-          <div className="mt-10 flex justify-center space-x-6 text-sm text-slate-700">
+          <div className="mt-9 flex justify-center space-x-7 text-sm text-slate-700">
             {links.map(({ id, text }) => (
               <Link
                 key={id}
                 href="/"
-                className="rounded-lg px-2 py-1 hover:bg-slate-100 hover:text-slate-900"
+                className="rounded-lg px-2 py-1 hover:bg-slate-100 hover:text-slate-900 duration-300"
               >
                 {text}
               </Link>
             ))}
           </div>
         </div>
-        <div className="py-10">
+        <div className="border-t border-slate-400/10 py-10">
           <div className="flex justify-center space-x-6">
             <Link
               href="https://twitter.com/"
@@ -53,8 +53,10 @@ const Footer = () => {
               <Github />
             </Link>
           </div>
-          <div className="mt-6 flex justify-center text-sm text-slate-500">
-            <p className="tracking-wide">Copyright © 2024 TaxPal. All rights reserved.</p>
+          <div className="mt-6 flex justify-center text-slate-500">
+            <p>
+              Copyright © 2024 TaxPal. All rights reserved.
+            </p>
           </div>
         </div>
       </div>
