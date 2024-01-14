@@ -1,4 +1,5 @@
 import LogoIcon from "@/icons/LogoIcon";
+import Twitter from "@/icons/Twitter";
 import Link from "next/link";
 import React from "react";
 
@@ -23,7 +24,7 @@ const Footer = () => {
         <div className="flex justify-center">
           <LogoIcon />
         </div>
-        <div className="flex justify-center space-x-6 text-sm text-slate-700 mt-10">
+        <div className="mt-10 flex justify-center space-x-6 text-sm text-slate-700">
           {links.map(({ id, text }) => (
             <Link
               key={id}
@@ -33,6 +34,13 @@ const Footer = () => {
               {text}
             </Link>
           ))}
+        </div>
+      </div>
+      <div>
+        <div>
+          <Link href="https://twitter.com/">
+            <Twitter />
+          </Link>
         </div>
       </div>
     </footer>
