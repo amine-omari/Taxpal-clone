@@ -23,7 +23,7 @@ const Navbar = () => {
         >
           Get started
         </Link>
-        <div>
+        <div className="md:hidden">
           <button
             className="relative z-50 flex items-center"
             onClick={toggleMenu}
