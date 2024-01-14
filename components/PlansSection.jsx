@@ -111,7 +111,7 @@ const PlansSection = () => {
           businessType="starter"
           text="Good for anyone who is self-employed and just getting started."
         >
-          {smallBusinessServices.map(({ id, text }) => (
+          {starterServices.map(({ id, text }) => (
             <div key={id} className="flex space-x-4">
               <span className="text-slate-400">
                 <CircleCheckIcon />
@@ -125,7 +125,7 @@ const PlansSection = () => {
           businessType="Enterprise"
           text="For even the biggest enterprise companies."
         >
-          {smallBusinessServices.map(({ id, text }) => (
+          {enterpriseServices.map(({ id, text }) => (
             <div key={id} className="flex space-x-4">
               <span className="text-slate-400">
                 <CircleCheckIcon />
