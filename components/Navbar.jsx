@@ -30,7 +30,7 @@ const Navbar = () => {
     <nav className="flex items-center justify-between px-4 sm:px-6">
       <div className="flex items-center md:space-x-12">
         <LogoIcon />
-        <div className="hidden md:flex space-x-8 text-sm">
+        <div className="hidden space-x-8 text-sm md:flex">
           {links.map(({ id, text }) => (
             <Link
               key={id}
@@ -43,6 +43,14 @@ const Navbar = () => {
         </div>
       </div>
       <div className="flex items-center space-x-6">
+        <div>
+          <Link
+            href="/"
+            className="rounded-lg px-2 py-1 duration-300 hover:bg-slate-100 hover:text-slate-900"
+          >
+            Sign in
+          </Link>
+        </div>
         <Link
           className="rounded-full bg-blue-600 px-4 py-2.5 text-sm font-semibold tracking-wide text-white hover:bg-blue-500"
           href="/"
