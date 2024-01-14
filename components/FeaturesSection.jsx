@@ -58,9 +58,9 @@ const FeaturesSection = () => {
       gradientStyle="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
     >
       <div className="mt-16 pt-10">
-        <div>
-          <div className="absolute right-0 top-[232px] h-[27%] w-full border border-white/10 bg-white/10"></div>
-          <div className="absolute right-0 flex w-full space-x-4 overflow-x-scroll px-4 pb-4">
+        <div className="sm:relative">
+          <div className="absolute right-0 top-[232px] h-[27%] w-full rounded-xl border border-white/10 bg-white/10 sm:-top-[38px] sm:h-[228px]"></div>
+          <div className="absolute right-0 flex w-full justify-between space-x-4 overflow-x-scroll px-4 pb-4 sm:justify-center sm:space-x-6 sm:px-0">
             {buttonInfo.map(({ id, button }) => (
               <button
                 key={id}
@@ -71,7 +71,7 @@ const FeaturesSection = () => {
               </button>
             ))}
           </div>
-          <p className="pt-16 text-lg text-white">
+          <p className="pt-16 text-lg text-white sm:text-center">
             {text ? text : buttonInfo[0].text}
           </p>
         </div>
