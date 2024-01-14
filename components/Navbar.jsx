@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between px-4">
+    <nav className="flex items-center justify-between px-4 sm:px-6">
       <div>
         <LogoIcon />
       </div>
