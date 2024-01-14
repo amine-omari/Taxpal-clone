@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <div>
+        <div className="flex justify-center space-x-6">
           <Link
             href="https://twitter.com/"
             className="fill-slate-500 duration-300 hover:fill-slate-700"
