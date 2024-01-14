@@ -50,7 +50,7 @@ const FeaturesSection = () => {
       textColor="text-blue-100"
       largeSpace={true}
       bgBlue={true}
-      padding="pb-28 pt-20"
+      padding="pb-28 pt-20 sm:py-32"
       gradientImg={true}
       src="https://salient.tailwindui.com/_next/static/media/background-features.5f7a9ac9.jpg"
       width={2245}
