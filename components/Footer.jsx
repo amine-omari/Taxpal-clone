@@ -38,7 +38,10 @@ const Footer = () => {
       </div>
       <div>
         <div>
-          <Link href="https://twitter.com/">
+          <Link
+            href="https://twitter.com/"
+            className="fill-slate-500 duration-300 hover:fill-slate-700"
+          >
             <Twitter />
           </Link>
         </div>
