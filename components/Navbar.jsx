@@ -27,7 +27,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex items-center justify-between px-4 sm:px-6">
+    <nav className="flex items-center justify-between px-4 sm:px-6 lg:px-8">
       <div className="flex items-center md:space-x-12">
         <LogoIcon />
         <div className="hidden space-x-8 text-sm md:flex">
@@ -55,7 +55,7 @@ const Navbar = () => {
           className="rounded-full bg-blue-600 px-4 py-2.5 text-sm font-semibold tracking-wide text-white hover:bg-blue-500"
           href="/"
         >
-          Get started
+          Get started <span className="hidden lg:inline-block">today</span>
         </Link>
         <div className="md:hidden">
           <button
