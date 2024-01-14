@@ -23,9 +23,13 @@ const Footer = () => {
         <div className="flex justify-center">
           <LogoIcon />
         </div>
-        <div className="flex justify-center space-x-6">
+        <div className="flex justify-center space-x-6 text-sm text-slate-700 mt-10">
           {links.map(({ id, text }) => (
-            <Link key={id} href="/">
+            <Link
+              key={id}
+              href="/"
+              className="rounded-lg px-2 py-1 hover:bg-slate-100 hover:text-slate-900"
+            >
               {text}
             </Link>
           ))}
