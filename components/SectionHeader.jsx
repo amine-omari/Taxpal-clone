@@ -13,7 +13,7 @@ const SectionHeader = ({
     <div
       className={`${
         largeSpace ? "space-y-6" : "space-y-4"
-      } ${textCenter} relative mx-auto max-w-2xl`}
+      } ${textCenter} relative mx-auto max-w-[640px]`}
     >
       <h2
         className={`text-[32px] font-medium leading-10 tracking-[0.01em] sm:text-[40px] sm:leading-snug ${

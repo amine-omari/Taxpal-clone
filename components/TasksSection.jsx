@@ -44,11 +44,12 @@ const TasksSection = () => {
       text="Because you’d probably be a little confused if we suggested you complicate your everyday business tasks instead."
       textColor="text-slate-700"
       padding="pt-20 pb-14 sm:pt-32 sm:pb-20"
+      textCenter="md:text-center"
     >
       <div className="mt-20 space-y-10">
         {Tasks.map(({ id, icon, title, text1, text2, src }) => (
           <div key={id}>
-            <div>
+            <div className="mx-auto max-w-[640px]">
               <div className="flex w-9 rounded-lg bg-blue-600">{icon}</div>
               <h3 className="mt-6 text-sm font-medium text-blue-600">
                 {title}
