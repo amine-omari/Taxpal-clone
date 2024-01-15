@@ -50,7 +50,7 @@ const TasksSection = () => {
       text="Because you’d probably be a little confused if we suggested you complicate your everyday business tasks instead."
       textColor="text-slate-700"
       padding="pt-20 pb-14 sm:pt-32 sm:pb-20"
-      textCenter="md:text-center mx-auto max-w-[640px]"
+      headerCenter="md:text-center mx-auto max-w-[640px]"
     >
       <div className="mt-20">
         <div className="space-y-10 lg:flex lg:space-x-8 lg:space-y-0">
