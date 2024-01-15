@@ -59,8 +59,8 @@ const FeaturesSection = () => {
       gradientStyle="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
       textLarge={true}
     >
-      <div className="mt-16 pt-10 md:mt-20">
-        <div className="sm:relative">
+      <div className="mt-16 pt-10 md:mt-20 lg:flex">
+        <div className="sm:relative lg:hidden">
           <div className="absolute right-0 top-[232px] h-[27%] w-full border border-white/10 bg-white/10 sm:-top-[38px] sm:h-[228px] sm:rounded-xl"></div>
           <div className="absolute right-0 flex w-full justify-between space-x-4 overflow-x-scroll px-4 pb-4 sm:justify-center sm:px-0 md:overflow-hidden">
             {buttonInfo.map(({ id, button }) => (
@@ -77,7 +77,22 @@ const FeaturesSection = () => {
             {text ? text : buttonInfo[0].text}
           </p>
         </div>
-        <div className="mt-10 w-[720px] sm:w-auto">
+        <div className="hidden lg:flex lg:items-center">
+          <div className="flex flex-col text-white">
+            {buttonInfo.map(({ id, button, text }) => (
+              <button
+                className="group min-w-[400px] rounded-l-xl border border-transparent p-6 text-left hover:bg-white/5 focus:border-white/10 focus:bg-white/10"
+                key={id}
+              >
+                <h3 className="text-lg font-medium tracking-wide">{button}</h3>
+                <p className="mt-2 text-sm leading-6 text-blue-100 group-hover:text-white group-focus:text-white">
+                  {text}
+                </p>
+              </button>
+            ))}
+          </div>
+        </div>
+        <div className="relative mt-10 w-[720px] sm:w-auto lg:mt-0 lg:h-fit lg:min-w-[1085px]">
           <Image
             src={imgSrc ? imgSrc : buttonInfo[0].src}
             alt="imgs"

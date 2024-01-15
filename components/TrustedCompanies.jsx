@@ -45,7 +45,7 @@ const TrustedCompanies = () => {
   ];
 
   return (
-    <div className="mt-36">
+    <div className="mt-36 lg:mt-44">
       <div className="text-center font-medium tracking-wide">
         <p>Trusted by these six companies so far</p>
       </div>
