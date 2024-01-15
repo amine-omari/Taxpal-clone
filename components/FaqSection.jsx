@@ -10,14 +10,14 @@ const FaqSection = () => {
       textColor="text-slate-700"
       bgLightGray={true}
       padding="py-20 sm:py-32"
-      textCenter="mx-auto max-w-[640px]"
+      textCenter="mx-auto max-w-[640px] lg:mx-0"
       gradientImg={true}
       src="https://salient.tailwindui.com/_next/static/media/background-faqs.55d2e36a.jpg"
       width={1558}
       height={946}
       gradientStyle="absolute left-1/2 top-0 max-w-none -translate-y-1/4 translate-x-[-30%]"
     >
-      <div className="mx-auto mt-16 max-w-[640px] space-y-8">
+      <div className="mx-auto mt-16 max-w-[640px] space-y-8 lg:grid lg:max-w-none lg:grid-cols-3 lg:space-y-0 lg:gap-x-8">
         <QuestionsContainer
           firstQuestion="Does TaxPal handle VAT?"
           firstAnswer="Well no, but if you move your company offshore you can probably ignore it."
