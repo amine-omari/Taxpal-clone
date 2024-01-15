@@ -60,7 +60,7 @@ const TestimonialsSection = () => {
       padding="py-20 sm:py-32"
       bgLightGray={true}
     >
-      <div className="mx-auto mt-16 max-w-[640px] space-y-6 sm:space-y-8">
+      <div className="mx-auto mt-16 max-w-[640px] space-y-6 sm:space-y-8 lg:mt-20 lg:grid lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
         {cardInfo.map(
           ({
             id,
