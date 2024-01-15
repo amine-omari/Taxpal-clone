@@ -48,7 +48,7 @@ const FeaturesSection = () => {
         like tax compliance."
       titleTextWhite={true}
       textColor="text-blue-100"
-      textCenter="md:text-center mx-auto max-w-[640px]"
+      headerCenter="md:text-center mx-auto max-w-[640px]"
       largeSpace={true}
       bgBlue={true}
       padding="pb-28 pt-20 sm:py-32"
@@ -57,9 +57,9 @@ const FeaturesSection = () => {
       width={2245}
       height={1636}
       gradientStyle="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
-      textLarge={true}
+      bigText={true}
     >
-      <div className="mt-16 pt-10 md:mt-20 lg:flex lg:pt-0">
+      <div className="mt-16 pt-10 md:mt-20 lg:grid lg:grid-cols-12 lg:pt-0">
         {/* mobile / tablet screen */}
         <div className="sm:relative lg:hidden">
           <div className="absolute right-0 top-[232px] h-[27%] w-full border border-white/10 bg-white/10 sm:-top-[38px] sm:h-[228px] sm:rounded-xl"></div>
@@ -80,7 +80,7 @@ const FeaturesSection = () => {
         </div>
 
         {/* from lg screen */}
-        <div className="hidden lg:flex lg:items-center">
+        <div className="hidden lg:col-span-5 lg:flex lg:items-center">
           <div className="flex flex-col text-white">
             {buttonInfo.map(({ id, button, text }) => (
               <button
@@ -96,7 +96,7 @@ const FeaturesSection = () => {
             ))}
           </div>
         </div>
-        <div className="relative mt-10 w-[720px] sm:w-auto lg:mt-0 lg:h-fit lg:min-w-[1085px]">
+        <div className="relative mt-10 w-[720px] sm:w-auto lg:col-span-7 lg:mt-0 lg:w-[1085px]">
           <Image
             src={imgSrc ? imgSrc : buttonInfo[0].src}
             alt="imgs"

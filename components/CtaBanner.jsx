@@ -11,7 +11,7 @@ const CtaBanner = () => {
       textColor="text-white"
       bgBlue={true}
       padding="py-32"
-      textCenter="text-center mx-auto max-w-lg"
+      headerCenter="text-center mx-auto max-w-lg"
       gradientImg={true}
       src="https://salient.tailwindui.com/_next/static/media/background-call-to-action.6a5a5672.jpg"
       width={2347}
