@@ -85,7 +85,7 @@ const PlansSection = () => {
     <Container
       title="Simple pricing, for everyone."
       text="It doesn’t matter what size your business is, our software won’t work well for you."
-      textCenter="md:text-center"
+      headerCenter="md:text-center"
       bgDarkBlue={true}
       titleTextWhite={true}
       textColor="text-slate-400"
