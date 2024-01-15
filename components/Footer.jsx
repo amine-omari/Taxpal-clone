@@ -21,7 +21,7 @@ const Footer = () => {
   ];
   return (
     <footer className="bg-slate-50">
-      <div className="px-4 sm:px-6">
+      <div className="px-4 sm:px-6 mx-auto lg:px-8 max-w-7xl">
         <div className="py-16">
           <div className="flex justify-center">
             <LogoIcon />

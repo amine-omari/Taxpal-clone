@@ -49,7 +49,7 @@ const TasksSection = () => {
       title="Simplify everyday business tasks."
       text="Because you’d probably be a little confused if we suggested you complicate your everyday business tasks instead."
       textColor="text-slate-700"
-      padding="pt-20 pb-14 sm:pt-32 sm:pb-20"
+      padding="pt-20 pb-14 sm:pt-32 sm:pb-20 lg:pb-32"
       headerCenter="md:text-center mx-auto max-w-[640px]"
     >
       <div className="mt-20">

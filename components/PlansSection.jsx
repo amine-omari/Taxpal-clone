@@ -91,7 +91,7 @@ const PlansSection = () => {
       textColor="text-slate-400"
       padding="py-20 sm:py-32"
     >
-      <div className="mx-auto mt-16 max-w-[640px] space-y-10 lg:-mx-8 lg:grid lg:max-w-none lg:grid-cols-3 lg:space-y-0">
+      <div className="mx-auto mt-16 max-w-[640px] space-y-10 lg:-mx-8 lg:grid lg:max-w-none lg:grid-cols-3 lg:space-y-0 xl:mx-0 xl:gap-x-8">
         <PlansCard
           amount="$15"
           businessType="Small business"
