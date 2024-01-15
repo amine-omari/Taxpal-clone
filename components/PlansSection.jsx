@@ -91,13 +91,12 @@ const PlansSection = () => {
       textColor="text-slate-400"
       padding="py-20 sm:py-32"
     >
-      <div className="mx-auto mt-16 max-w-[640px] space-y-10 lg:-mx-8 lg:grid lg:max-w-none lg:grid-cols-3 lg:space-y-0">
+      <div className="mt-16 max-w-[640px] mx-auto space-y-10">
         <PlansCard
           amount="$15"
           businessType="Small business"
           text="Perfect for small / medium sized businesses."
           bgBlue={true}
-          order="lg:order-2"
         >
           {smallBusinessServices.map(({ id, text }) => (
             <div key={id} className="flex space-x-4">
@@ -112,7 +111,6 @@ const PlansSection = () => {
           amount="$9"
           businessType="starter"
           text="Good for anyone who is self-employed and just getting started."
-          order="lg:order-1"
         >
           {starterServices.map(({ id, text }) => (
             <div key={id} className="flex space-x-4">
@@ -127,7 +125,6 @@ const PlansSection = () => {
           amount="$39"
           businessType="Enterprise"
           text="For even the biggest enterprise companies."
-          order="lg:order-3"
         >
           {enterpriseServices.map(({ id, text }) => (
             <div key={id} className="flex space-x-4">

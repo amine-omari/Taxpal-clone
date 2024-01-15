@@ -6,7 +6,7 @@ import ContactsIcon from "@/icons/ContactsIcon";
 import Image from "next/image";
 
 const TasksSection = () => {
-  const [index, setIndex] = useState(0);
+  const [img, setImg] = useState();
 
   const Tasks = [
     {
@@ -40,8 +40,8 @@ const TasksSection = () => {
     },
   ];
 
-  const slideImg = (id) => {
-    setIndex(id - 1);
+  const slideImg = (src) => {
+    setImg(src);
   };
 
   return (
@@ -57,8 +57,8 @@ const TasksSection = () => {
           {Tasks.map(({ id, icon, title, text1, text2, src }) => (
             <div key={id}>
               <button
-                onClick={() => slideImg(id - 1)}
-                className={`group mx-auto max-w-[640px] cursor-default text-left lg:cursor-pointer lg:opacity-75 lg:hover:opacity-100 lg:focus:opacity-100`}
+                onClick={() => slideImg(src)}
+                className="group mx-auto max-w-[640px] cursor-default text-left lg:cursor-pointer lg:opacity-75 lg:hover:opacity-100 lg:focus:opacity-100"
               >
                 <span className="flex w-9 rounded-lg bg-blue-600 lg:bg-slate-500 lg:group-focus:bg-blue-600">
                   {icon}
@@ -93,25 +93,18 @@ const TasksSection = () => {
           {/* from lg screen */}
         </div>
         <div className="mt-20 hidden justify-center overflow-hidden rounded-[32px] border border-slate-500/20 bg-slate-200 px-14 py-16 lg:flex">
-          <div
-            className="flex transition-all duration-500"
-            style={{ transform: `translateX(${-844 * index}px)` }}
-          >
-            {Tasks.map(({ id, src }) => (
-              <div key={id} className="px-5">
-                <Image
-                  src={src}
-                  alt="tasks image"
-                  width={844}
-                  height={427}
-                  className={`${
-                    index + 1 != id - 1 && "opacity-50"
-                  } min-w-[844px] rounded-xl border border-slate-500/10`}
-                  priority={true}
-                />
-              </div>
-            ))}
-          </div>
+          {Tasks.map(({ id, src }) => (
+            <div key={id} className="px-5">
+              <Image
+                src={img ? img : src}
+                alt="tasks image"
+                width={844}
+                height={427}
+                className="min-w-[844px] rounded-xl border border-slate-500/10"
+                priority={true}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </Container>
