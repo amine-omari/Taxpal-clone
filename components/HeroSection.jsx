@@ -19,19 +19,19 @@ const HeroSection = () => {
     },
   ];
   return (
-    <section className="px-4 pb-16 pt-20">
+    <section className="px-4 pb-16 pt-20 sm:px-6 lg:px-8 lg:pt-32">
       <div className="text-center">
-        <h1 className="text-5xl font-semibold leading-[55px]">
+        <h1 className="mx-auto max-w-4xl text-5xl font-semibold leading-[55px] sm:text-7xl sm:leading-[77px]">
           Accounting
-          <br />
+          <br className="md:hidden" />{" "}
           <span className="text-blue-600">made simple</span> for small
           businesses.
         </h1>
-        <p className="mt-6 px-2 text-lg leading-8 text-slate-700">
+        <p className="mx-auto mt-6 max-w-2xl px-6 text-lg leading-8 text-slate-700 sm:mt-7">
           Most bookkeeping software is accurate, but hard to use. We make the
           opposite trade-off, and hope you don’t get audited.
         </p>
-        <div className="mt-10 flex justify-center space-x-5">
+        <div className="mt-10 flex justify-center space-x-5 lg:pt-0.5">
           {buttonStyle.map(({ id, text, icon, style }) => (
             <Link
               key={id}

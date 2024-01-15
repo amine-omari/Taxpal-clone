@@ -45,19 +45,19 @@ const TrustedCompanies = () => {
   ];
 
   return (
-    <div className="mt-36">
-      <div className="text-center font-medium">
+    <div className="mt-36 lg:mt-44">
+      <div className="text-center font-medium tracking-wide">
         <p>Trusted by these six companies so far</p>
       </div>
-      <div className="mt-8 flex justify-center space-x-8">
-        <div className="space-y-8">
+      <div className="mt-8 flex justify-center space-x-8 sm:mt-9 sm:flex-col sm:items-center sm:space-x-0 sm:space-y-10">
+        <div className="space-y-8 sm:flex sm:space-x-12 sm:space-y-0">
           {firstGroupLogo.map(({ id, src, alt, width }) => (
             <div className="flex items-center justify-center" key={id}>
               <Image src={src} alt={alt} width={width} height={48} />
             </div>
           ))}
         </div>
-        <div className="space-y-8">
+        <div className="space-y-8 sm:flex sm:space-x-12 sm:space-y-0">
           {secondGroupLogo.map(({ id, src, alt, width }) => (
             <div className="flex items-center justify-center" key={id}>
               <Image src={src} alt={alt} width={width} height={48} />

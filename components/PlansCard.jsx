@@ -9,9 +9,9 @@ const PlansCard = ({
   children,
 }) => {
   return (
-    <div className={`relative px-2 text-white ${bgBlue && "py-8"}`}>
+    <div className={`relative px-2 sm:px-8 text-white ${bgBlue && "py-8"}`}>
       {bgBlue && (
-        <div className="absolute -left-4 -right-4 top-0 h-full rounded-3xl bg-blue-600"></div>
+        <div className="absolute -left-4 -right-4 sm:inset-x-0 top-0 h-full rounded-3xl bg-blue-600"></div>
       )}
       <div className="relative">
         <p className="text-5xl">{amount}</p>

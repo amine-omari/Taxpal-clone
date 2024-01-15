@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "./Container";
 import ReportingIcon from "@/icons/ReportingIcon";
 import InventoryIcon from "@/icons/InventoryIcon";
@@ -6,6 +6,8 @@ import ContactsIcon from "@/icons/ContactsIcon";
 import Image from "next/image";
 
 const TasksSection = () => {
+  const [img, setImg] = useState();
+
   const Tasks = [
     {
       id: 1,
@@ -38,41 +40,72 @@ const TasksSection = () => {
     },
   ];
 
+  const slideImg = (src) => {
+    setImg(src);
+  };
+
   return (
     <Container
       title="Simplify everyday business tasks."
       text="Because you’d probably be a little confused if we suggested you complicate your everyday business tasks instead."
       textColor="text-slate-700"
-      padding="pt-20 pb-14"
+      padding="pt-20 pb-14 sm:pt-32 sm:pb-20"
+      textCenter="md:text-center mx-auto max-w-[640px]"
     >
-      <div className="mt-20 space-y-10">
-        {Tasks.map(({ id, icon, title, text1, text2, src }) => (
-          <div key={id}>
-            <div>
-              <div className="flex w-9 rounded-lg bg-blue-600">{icon}</div>
-              <h3 className="mt-6 text-sm font-medium text-blue-600">
-                {title}
-              </h3>
-              <p className="mt-3 text-xl font-medium leading-8">{text1}</p>
-              <p className="mt-4 text-sm leading-6 tracking-wide text-slate-600">
-                {text2}
-              </p>
-            </div>
-            <div className="relative mt-10 pb-10">
-              <div className="absolute -left-4 -right-4 bottom-0 h-[93%] bg-slate-200"></div>
-              <div className="relative w-[844px]">
-                <Image
-                  src={src}
-                  alt="tasks image"
-                  width={844}
-                  height={427}
-                  className="rounded-xl border border-slate-500/10"
-                  priority={true}
-                />
+      <div className="mt-20">
+        <div className="space-y-10 lg:flex lg:space-x-8 lg:space-y-0">
+          {Tasks.map(({ id, icon, title, text1, text2, src }) => (
+            <div key={id}>
+              <button
+                onClick={() => slideImg(src)}
+                className="group mx-auto max-w-[640px] cursor-default text-left lg:cursor-pointer lg:opacity-75 lg:hover:opacity-100 lg:focus:opacity-100"
+              >
+                <span className="flex w-9 rounded-lg bg-blue-600 lg:bg-slate-500 lg:group-focus:bg-blue-600">
+                  {icon}
+                </span>
+                <h3 className="mt-6 text-sm font-medium text-blue-600 lg:text-slate-600 lg:group-focus:text-blue-600">
+                  {title}
+                </h3>
+                <p className="mt-3 text-xl font-medium leading-8 tracking-wide">
+                  {text1}
+                </p>
+                <p className="mt-4 text-sm leading-6 tracking-wide text-slate-600">
+                  {text2}
+                </p>
+              </button>
+
+              {/* mobile screen */}
+              <div className="relative mt-10 pb-10 lg:hidden">
+                <div className="absolute -left-4 -right-4 bottom-0 h-[93%] bg-slate-200 sm:-left-6 sm:-right-6"></div>
+                <div className="relative w-[844px]">
+                  <Image
+                    src={src}
+                    alt="tasks image"
+                    width={844}
+                    height={427}
+                    className="rounded-xl border border-slate-500/10"
+                    priority={true}
+                  />
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+          {/* from lg screen */}
+        </div>
+        <div className="mt-20 hidden justify-center overflow-hidden rounded-[32px] border border-slate-500/20 bg-slate-200 px-14 py-16 lg:flex">
+          {Tasks.map(({ id, src }) => (
+            <div key={id} className="px-5">
+              <Image
+                src={img ? img : src}
+                alt="tasks image"
+                width={844}
+                height={427}
+                className="min-w-[844px] rounded-xl border border-slate-500/10"
+                priority={true}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </Container>
   );

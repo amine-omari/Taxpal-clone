@@ -8,6 +8,7 @@ const Container = ({
   titleTextWhite,
   textColor,
   largeSpace,
+  textLarge,
   textCenter,
   bgBlue = false,
   bgDarkBlue = false,
@@ -22,9 +23,9 @@ const Container = ({
 }) => {
   return (
     <section
-      className={`${bgBlue && "bg-blue-600"} ${
-        bgLightGray && "bg-slate-50"
-      } ${bgDarkBlue && "bg-slate-900"} ${padding} relative overflow-hidden`}
+      className={`${bgBlue && "bg-blue-600"} ${bgLightGray && "bg-slate-50"} ${
+        bgDarkBlue && "bg-slate-900"
+      } ${padding} relative overflow-hidden`}
     >
       {gradientImg && (
         <Image
@@ -36,7 +37,7 @@ const Container = ({
           priority={true}
         />
       )}
-      <div className="relative px-4">
+      <div className="relative px-4 sm:px-6 lg:px-8">
         <SectionHeader
           title={title}
           text={text}
@@ -44,6 +45,7 @@ const Container = ({
           textColor={textColor}
           largeSpace={largeSpace}
           textCenter={textCenter}
+          textLarge={textLarge}
         />
         {children}
       </div>

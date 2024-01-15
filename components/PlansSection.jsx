@@ -85,12 +85,13 @@ const PlansSection = () => {
     <Container
       title="Simple pricing, for everyone."
       text="It doesn’t matter what size your business is, our software won’t work well for you."
+      textCenter="md:text-center"
       bgDarkBlue={true}
       titleTextWhite={true}
       textColor="text-slate-400"
-      padding="py-20"
+      padding="py-20 sm:py-32"
     >
-      <div className="mt-16 space-y-10">
+      <div className="mt-16 max-w-[640px] mx-auto space-y-10">
         <PlansCard
           amount="$15"
           businessType="Small business"
@@ -111,7 +112,7 @@ const PlansSection = () => {
           businessType="starter"
           text="Good for anyone who is self-employed and just getting started."
         >
-          {smallBusinessServices.map(({ id, text }) => (
+          {starterServices.map(({ id, text }) => (
             <div key={id} className="flex space-x-4">
               <span className="text-slate-400">
                 <CircleCheckIcon />
@@ -125,7 +126,7 @@ const PlansSection = () => {
           businessType="Enterprise"
           text="For even the biggest enterprise companies."
         >
-          {smallBusinessServices.map(({ id, text }) => (
+          {enterpriseServices.map(({ id, text }) => (
             <div key={id} className="flex space-x-4">
               <span className="text-slate-400">
                 <CircleCheckIcon />
