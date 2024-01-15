@@ -10,7 +10,7 @@ const FaqSection = () => {
       textColor="text-slate-700"
       bgLightGray={true}
       padding="py-20 sm:py-32"
-      headerCenterenter="mx-auto max-w-[640px] lg:mx-0"
+      headerCenter="mx-auto max-w-[640px] lg:mx-0"
       gradientImg={true}
       src="https://salient.tailwindui.com/_next/static/media/background-faqs.55d2e36a.jpg"
       width={1558}

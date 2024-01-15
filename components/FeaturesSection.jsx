@@ -48,7 +48,7 @@ const FeaturesSection = () => {
         like tax compliance."
       titleTextWhite={true}
       textColor="text-blue-100"
-      headerCenter="md:text-center mx-auto max-w-[640px]"
+      headerCenter="md:text-center mx-auto max-w-[640px] xl:max-w-none"
       largeSpace={true}
       bgBlue={true}
       padding="pb-28 pt-20 sm:py-32"
