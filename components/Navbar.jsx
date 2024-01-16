@@ -4,6 +4,7 @@ import Xmark from "@/icons/Xmark";
 import Link from "next/link";
 import React, { useState } from "react";
 import MenuContainer from "./MenuContainer";
+import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState();
@@ -15,37 +16,44 @@ const Navbar = () => {
     {
       id: 1,
       text: "Features",
+      sectionId: "FeaturesSection",
     },
     {
       id: 2,
       text: " Testimonials",
+      sectionId: "TestimonialsSection",
     },
     {
       id: 3,
       text: "Pricing",
+      sectionId: "PlansSection",
     },
   ];
 
   return (
-    <nav className="flex items-center justify-between px-4 sm:px-6 lg:px-8">
+    <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
       <div className="flex items-center md:space-x-12">
         <LogoIcon />
         <div className="hidden space-x-8 text-sm md:flex">
-          {links.map(({ id, text }) => (
-            <Link
+          {links.map(({ id, sectionId, text }) => (
+            <ScrollLink
               key={id}
-              href="/"
-              className="rounded-lg px-2 py-1 duration-300 hover:bg-slate-100 hover:text-slate-900"
+              to={sectionId}
+              spy={true}
+              exact="true"
+              activeClass="active"
+              smooth
+              className="cursor-pointer rounded-lg px-2 py-1 duration-300 hover:bg-slate-100 hover:text-slate-900"
             >
               {text}
-            </Link>
+            </ScrollLink>
           ))}
         </div>
       </div>
       <div className="flex items-center space-x-6 md:space-x-9">
         <div className="hidden text-sm md:flex">
           <Link
-            href="/"
+            href="https://salient.tailwindui.com/login"
             className="rounded-lg px-2 py-1 duration-300 hover:bg-slate-100 hover:text-slate-900"
           >
             Sign in
@@ -53,7 +61,7 @@ const Navbar = () => {
         </div>
         <Link
           className="rounded-full bg-blue-600 px-4 py-2.5 text-sm font-semibold tracking-wide text-white hover:bg-blue-500"
-          href="/"
+          href="https://salient.tailwindui.com/register"
         >
           Get started <span className="hidden lg:inline-block">today</span>
         </Link>

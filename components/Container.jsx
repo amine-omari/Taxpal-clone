@@ -8,8 +8,9 @@ const Container = ({
   titleTextWhite,
   textColor,
   largeSpace,
-  textLarge,
-  textCenter,
+  bigText,
+  headerCenter,
+  id,
   bgBlue = false,
   bgDarkBlue = false,
   bgLightGray = false,
@@ -23,6 +24,7 @@ const Container = ({
 }) => {
   return (
     <section
+    id={id}
       className={`${bgBlue && "bg-blue-600"} ${bgLightGray && "bg-slate-50"} ${
         bgDarkBlue && "bg-slate-900"
       } ${padding} relative overflow-hidden`}
@@ -37,15 +39,15 @@ const Container = ({
           priority={true}
         />
       )}
-      <div className="relative px-4 sm:px-6 lg:px-8">
+      <div className="relative px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <SectionHeader
           title={title}
           text={text}
           titleTextWhite={titleTextWhite}
           textColor={textColor}
           largeSpace={largeSpace}
-          textCenter={textCenter}
-          textLarge={textLarge}
+          headerCenter={headerCenter}
+          bigText={bigText}
         />
         {children}
       </div>

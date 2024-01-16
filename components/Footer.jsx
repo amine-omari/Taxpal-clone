@@ -3,38 +3,47 @@ import LogoIcon from "@/icons/LogoIcon";
 import Twitter from "@/icons/Twitter";
 import Link from "next/link";
 import React from "react";
+import { Link as ScrollLink } from "react-scroll";
 
 const Footer = () => {
   const links = [
     {
       id: 1,
       text: "Features",
+      sectionId: "FeaturesSection",
     },
     {
       id: 2,
       text: " Testimonials",
+      sectionId: "TestimonialsSection",
     },
     {
       id: 3,
       text: "Pricing",
+      sectionId: "PlansSection",
     },
   ];
+
   return (
     <footer className="bg-slate-50">
-      <div className="px-4 sm:px-6">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="py-16">
           <div className="flex justify-center">
             <LogoIcon />
           </div>
           <div className="mt-9 flex justify-center space-x-7 text-sm text-slate-700">
-            {links.map(({ id, text }) => (
-              <Link
+            {links.map(({ id, sectionId, text }) => (
+              <ScrollLink
                 key={id}
-                href="/"
-                className="rounded-lg px-2 py-1 duration-300 hover:bg-slate-100 hover:text-slate-900"
+                to={sectionId}
+                spy={true}
+                exact="true"
+                activeClass="active"
+                smooth
+                className="cursor-pointer rounded-lg px-2 py-1 duration-300 hover:bg-slate-100 hover:text-slate-900"
               >
                 {text}
-              </Link>
+              </ScrollLink>
             ))}
           </div>
         </div>
@@ -47,7 +56,7 @@ const Footer = () => {
               <Twitter />
             </Link>
             <Link
-              href="https://twitter.com/"
+              href="https://github.com/"
               className="fill-slate-500 duration-300 hover:fill-slate-700"
             >
               <Github />
