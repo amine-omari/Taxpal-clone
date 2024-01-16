@@ -10,6 +10,7 @@ const Container = ({
   largeSpace,
   bigText,
   headerCenter,
+  id,
   bgBlue = false,
   bgDarkBlue = false,
   bgLightGray = false,
@@ -23,6 +24,7 @@ const Container = ({
 }) => {
   return (
     <section
+    id={id}
       className={`${bgBlue && "bg-blue-600"} ${bgLightGray && "bg-slate-50"} ${
         bgDarkBlue && "bg-slate-900"
       } ${padding} relative overflow-hidden`}

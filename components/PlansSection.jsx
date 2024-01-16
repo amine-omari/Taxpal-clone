@@ -86,6 +86,7 @@ const PlansSection = () => {
       title="Simple pricing, for everyone."
       text="It doesn’t matter what size your business is, our software won’t work well for you."
       headerCenter="md:text-center"
+      id="PlansSection"
       bgDarkBlue={true}
       titleTextWhite={true}
       textColor="text-slate-400"
