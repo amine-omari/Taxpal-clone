@@ -20,7 +20,7 @@ const CtaBanner = () => {
     >
       <div className="mt-10 flex justify-center">
         <Link
-          href="/"
+          href="https://salient.tailwindui.com/register"
           className="rounded-full bg-white px-4 py-2.5 text-sm font-semibold hover:bg-blue-50"
         >
           Get 6 months free

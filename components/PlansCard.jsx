@@ -27,7 +27,7 @@ const PlansCard = ({
           {text}
         </p>
         <Link
-          href="/"
+          href="https://salient.tailwindui.com/register"
           className={`mt-9 flex justify-center rounded-full px-4 py-2 font-semibold ${
             bgBlue
               ? "bg-white text-black hover:bg-blue-50"
