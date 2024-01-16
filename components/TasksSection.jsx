@@ -58,12 +58,24 @@ const TasksSection = () => {
             <div key={id}>
               <button
                 onClick={() => slideImg(id - 1)}
-                className={`group mx-auto max-w-[640px] cursor-default text-left lg:cursor-pointer lg:opacity-75 lg:hover:opacity-100 lg:focus:opacity-100`}
+                className={`mx-auto max-w-[640px] cursor-default text-left lg:cursor-pointer lg:hover:opacity-100 ${
+                  id - 1 === index + 1 ? "lg:opacity-100" : "lg:opacity-70"
+                }`}
               >
-                <span className="flex w-9 rounded-lg bg-blue-600 lg:bg-slate-500 lg:group-focus:bg-blue-600">
+                <span
+                  className={`flex w-9 rounded-lg bg-blue-600 ${
+                    id - 1 === index + 1 ? "lg:bg-blue-600" : "lg:bg-slate-500"
+                  }`}
+                >
                   {icon}
                 </span>
-                <h3 className="mt-6 text-sm font-medium text-blue-600 lg:text-slate-600 lg:group-focus:text-blue-600">
+                <h3
+                  className={`mt-6 text-sm font-medium text-blue-600 ${
+                    id - 1 === index + 1
+                      ? "lg:text-blue-600"
+                      : "lg:text-slate-600"
+                  }`}
+                >
                   {title}
                 </h3>
                 <p className="mt-3 text-xl font-medium leading-8 tracking-wide">
